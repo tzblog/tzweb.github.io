@@ -5,6 +5,8 @@
   <!-- SEO相关 -->
   
     
+      <meta name="robots" content="noindex,follow">
+    
   
   <!-- 渲染优化 -->
   <meta name="renderer" content="webkit">
@@ -16,7 +18,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>小酒微醺</title>
+  <title>归档：2020/8 - 小酒微醺</title>
   
 
   
@@ -721,7 +723,7 @@
 
   
   
-      <div class='cover-wrapper list featured' style="display: none;">
+      <div class='cover-wrapper  featured' style="display: none;">
         
           <div class='cover-backstretch'></div>
         
@@ -797,14 +799,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("none" == "none") { // 移除封面
+  if ("half" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("none" == "half") { // 半屏
+    if ("half" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("none" == "full") { // 全屏
+    } else if ("half" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -817,38 +819,70 @@
                                     
                                         
 
-
 <div class='l_main'>
+	
+		
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <div class="post post-v3 white-box reveal shadow">
   
-    <section class="post-list">
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-        
-      
-      
-        
-      
-        
-      
-        
-      
-    </section>
   
+  
+  
+    
+    <h2 class="article-title" >
+      <a href="/2020/08/30/hello-world/">
+        Hello World
+      </a>
+    </h2>
+  
+  <div class='md'>
+    
+      
+        Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Qu...
+      
+    
+  </div>
+  
+    <div class='meta-v3' line_style='dashed'>
+      <div>
+        <time>2020-08-30</time>
+        
+      </div>
+      
+        <div>
+            <a class='readmore' href='/2020/08/30/hello-world/'>
+            阅读全文
+          </a>
+        </div>
+      
+    </div>
+  
+
+</div>
+
+          </div>
+        
+      
+    
+  </section>
+  
+    
+  
+
+
+	
 </div>
 <aside class='l_side'>
   
