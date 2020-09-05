@@ -1,4 +1,4 @@
-* {
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script>* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
@@ -25,12 +25,8 @@ a:active {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-@font-face {
-  font-family: 思宋常规;
-  src: url("https://cdn.jsdelivr.net/gh/tzblog/cloud@master/fonts/SHSRegular.otf");
-}
+
 body {
-  font-family: 思宋常规;
   /* background-color: #24252d; */
   background-image: url(https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/lin-shan.png);
 }

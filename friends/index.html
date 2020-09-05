@@ -20,8 +20,6 @@
   
 
   
-    <meta name="description" content="这里写友链上方的内容。">
-  
 
   <!-- feed -->
   
@@ -46,6 +44,8 @@
 
   
 
+  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
   
 
   
@@ -723,7 +723,7 @@
 
   
   
-      <div class='cover-wrapper friends featured' style="display: none;">
+      <div class='cover-wrapper page featured' style="display: none;">
         
           <div class='cover-backstretch'></div>
         
@@ -742,6 +742,8 @@
           
             <a href="/photos/"
               
+              
+                target="_blank"
               
               id="photos">
               <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/xiangce.svg'><p>相册</p>
@@ -799,14 +801,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("none" == "none") { // 移除封面
+  if ("half" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("none" == "half") { // 半屏
+    if ("half" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("none" == "full") { // 全屏
+    } else if ("half" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -820,12 +822,28 @@
                                         
 
 <div class='l_main'>
-  <article id="friends" class="post article article-entry l_friends white-box reveal shadow article-type-friends" itemscope itemprop="blogPost">
-    
+  <article class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
+  
 
 
   
   <div class="article-meta" id="top">
+    
+      
+
+  
+    <meting-js
+      mini='true'
+      volume='0.7'
+      loop='all'
+      order='list'
+      server='netease'
+      type='search'
+      id='朋友'>
+    </meting-js>
+  
+
+
     
     
     
@@ -839,102 +857,42 @@
   </div>
 
 
-    <p>这里写友链上方的内容。</p>
-    
-      
-        
-          <div class='friends-group'>
-            
-              <br>
-              <h2 class='friend-header'>
-                
-                  <i class="fas fa-user-tie fa-fw" aria-hidden="true"></i>
-                
-                分组1
-              </h2>
-              
-                <p>这个分组的描述</p>
+  
+  
+  <style>
 
-              
-            
-            <div class='friend-content'>
-              
-                <a class='friend-card' style='background:#3E74C9; color:#fff'
-                  target="_blank" rel="external nofollow noopener noreferrer" href='/'>
-                  <div class='friend-left'>
-                    
-                  </div>
-                  <div class='friend-right'>
-                    <p class="friend-name"></p>
-                    
-                      <div class='friend-tags-wrapper'>
-                      
-                        <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签1</p>
-                      
-                        <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签2</p>
-                      
-                      </div>
-                    
-                    
-                      <div class='friend-tags-wrapper'>
-                        <p class="tags">描述文字</p>
-                      </div>
-                    
-                  </div>
-                </a>
-              
-            </div>
-          </div>
-        
-      
-        
-          <div class='friends-group'>
-            
-              <br>
-              <h2 class='friend-header'>
-                
-                  <i class="fas fa-user-tie fa-fw" aria-hidden="true"></i>
-                
-                分组2
-              </h2>
-              
-                <p>这个分组的描述</p>
+  h2{
+    display: inline;
+    color: red;
+  }
+</style>
 
-              
-            
-            <div class='friend-content'>
-              
-                <a class='friend-card' style='background:#3E74C9; color:#fff'
-                  target="_blank" rel="external nofollow noopener noreferrer" href='/'>
-                  <div class='friend-left'>
-                    
-                  </div>
-                  <div class='friend-right'>
-                    <p class="friend-name"></p>
-                    
-                      <div class='friend-tags-wrapper'>
-                      
-                        <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签1</p>
-                      
-                        <p class="tags"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>标签2</p>
-                      
-                      </div>
-                    
-                    
-                      <div class='friend-tags-wrapper'>
-                        <p class="tags">描述文字</p>
-                      </div>
-                    
-                  </div>
-                </a>
-              
-            </div>
-          </div>
-        
-      
-    
-    <br><br>
-    <p>这里可以写友链页面下方的文字备注，例如自己的友链规范、示例等。</p>
+<details green><summary> <p>UI友链</p> </summary>
+              <div class='content'>
+              <div class="site-card-group"><a class="site-card" target="_blank" rel="noopener" href="https://www.zcool.com.cn/"><div class="img"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-zcool.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-zcool.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/zcool.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/zcool.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">站酷</span><span class="desc">UI集聚</span></div></a><a class="site-card" target="_blank" rel="noopener" href="https://www.ui.cn/"><div class="img"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-uicn.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-uicn.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/uicn.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/uicn.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">UI中国</span><span class="desc">UI集聚</span></div></a><!-- <a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a> --></div>
+              </div>
+            </details>
+
+<!-- UI友链 -->
+
+<details red><summary> <p><strong>代码友链</strong></p> </summary>
+              <div class='content'>
+              <div class="site-card-group"><a class="site-card" target="_blank" rel="noopener" href="https://xaoxuu.com/wiki/volantis/"><div class="img"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-volantis.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youlian-volantis.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-assets/avatar/avatar.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">Volantis主题</span><span class="desc">Volantis官网</span></div></a><!-- <a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a> --></div>
+              </div>
+            </details>
+
+<!-- 代码友链 -->
+
+<!-- <details blue open><summary> <p><strong>其他友链</strong></p> </summary>
+              <div class='content'>
+              <div class="site-card-group"><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a><a class="site-card" href="链接"><div class="img"><img src="截图链接" class="lazyload" data-srcset="截图链接" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="info"><img src="头像链接（可选）" class="lazyload" data-srcset="头像链接（可选）" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/><span class="title">标题</span><span class="desc">描述（可选）</span></div></a></div>
+              </div>
+            </details> -->
+
+<!-- 其他友链 -->
+
+  
+  
     
 
 
@@ -945,18 +903,13 @@
   </div>
 
 
-  </article>
-
+  
   
 
-  <article class="post white-box reveal shadow" id="comments">
-    <p ct><i class='fas fa-comments'></i> 评论</p>
-    
-    <div id="valine_container" class="valine_thread">
-  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
-</div>
+  
+</article>
 
-  </article>
+
 
 
 
@@ -1034,8 +987,18 @@
 
   
 
+  
+    
+    
+
+
+
+
+  
+
 
 </aside>
+
 
 
                         </div>
@@ -1047,6 +1010,22 @@
       
         <div class="aplayer-container">
           
+
+  
+    <meting-js
+      theme='#1BCDFC'
+      autoplay='true'
+      volume='0.7'
+      loop='all'
+      order='list'
+      fixed='false'
+      list-max-height='320px'
+      server='netease'
+      type='playlist'
+      id='2673431179'
+      list-folded='true'>
+    </meting-js>
+  
 
 
         </div>
@@ -1224,6 +1203,26 @@
         
       
         
+          <li class='music name'>
+            <p class='nav music-title fix-cursor-default'></p>
+          </li>
+          <li class='music ctrl'>
+            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
+            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
+            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
+          </li>
+          <li class='music volume'>
+            <a class='nav volume'>
+              <div class="aplayer-volume-bar-wrap">
+                <div class="aplayer-volume-bar fix-cursor-pointer">
+                  <div class="aplayer-volume"></div>
+                  <i class='left fa fa-volume-off fa-fw'></i>
+                  <i class='right fa fa-volume-up fa-fw'></i>
+                </div>
+              </div>
+            </a>
+          </li>
+        
       
     </ul>
   </div>
@@ -1326,7 +1325,7 @@
       }
 
       // 有音乐播放器
-      if ( == true && ('home,help,examples,contributors,hr,source_theme,hr,music'||[]).includes('music')) {
+      if (true == true && ('home,help,examples,contributors,hr,source_theme,hr,music'||[]).includes('music')) {
         // 如果有aplayer，初始化一下
       	try {
       		checkAPlayer();
@@ -1569,6 +1568,28 @@
 </script>
 
 
+
+
+
+
+  <script>
+  let APlayerController = new Object();
+  APlayerController.id = '2673431179';  // 设定全局音乐播放ID
+  APlayerController.volume = '0.7';
+</script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
+
+
+
+
+  
+<script src="/js/aplayer.js"></script>
 
 
 
