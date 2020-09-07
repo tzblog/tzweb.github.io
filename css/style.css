@@ -109,10 +109,10 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
 }
 h4 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 h5 {
   font-size: 1rem;
@@ -1622,13 +1622,13 @@ p.p.h2 {
 }
 span.p.h3,
 p.p.h3 {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: var(--color-h3);
   padding-top: 2em;
 }
 span.p.h4,
 p.p.h4 {
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--color-h4);
   padding-top: 2em;
 }
@@ -3664,7 +3664,7 @@ article#tag .all-tags ul li span:before {
 .article h3 {
   text-align: left;
   color: var(--color-h3);
-  margin-top: 24px;
+  margin-top: 18px;
 }
 .article h4 {
   text-align: left;
@@ -5147,7 +5147,7 @@ footer.footer .copyright p {
 article#comments .article p[ct] {
   margin-top: 0;
   margin-bottom: 1em;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
   color: var(--color-text);
 }
 article#comments .article p[cst] {
@@ -5263,7 +5263,7 @@ img.lazyload:not(.placeholder).loaded {
   margin-bottom: 1em;
 }
 .md h3:before {
-  margin-top: -56px;
+  margin-top: -62px;
 }
 .md h4:before {
   margin-top: -64px;
@@ -5355,7 +5355,7 @@ img.lazyload:not(.placeholder).loaded {
   flex-shrink: 0;
   line-height: 64px;
   padding: 0 24px;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-family: "Varela Round", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, Helvetica, monospace;
 }
 .l_header .wrapper .nav-main .title img {
@@ -6307,7 +6307,7 @@ ul.list-v >li>a:hover {
   white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 #u-search .modal-body .modal-results .result .digest {
   display: block;
