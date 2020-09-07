@@ -903,37 +903,51 @@
 <p class='p black'>4、适合多特效的 APNG/WEBP</p>
 <p class='p black'>5、近几年流行的落地格式 LOTTLE/SVGA</p>
 
-<h3 id="①-GIF"><a href="#①-GIF" class="headerlink" title="① GIF"></a>① GIF</h3><div class="note"><p>GIF的全称是Graphics Interchange Format，可译为图形交换格式，实现和开发成本低的有损格式，仅支持8位256色但具有很强的兼容性 </br> <code>体积大，质量差，尤其是透明的动画一定要慎用。</code></p></div>
-<div class="timeline">
-<!-- 节点1 -->
+<h3 id="①-GIF"><a href="#①-GIF" class="headerlink" title="① GIF"></a>① <strong>GIF</strong></h3><div class="note"><p>GIF的全称是Graphics Interchange Format，可译为图形交换格式，实现和开发成本低的有损格式，仅支持8位256色但具有很强的兼容性 </br> <code>体积大，质量差，尤其是透明的动画一定要慎用。</code></p></div>
 
+<!-- 轴1 -->
+
+<div class="timeline">
 <div class="timenode"><div class="meta"><p><ol>
 <li>PS+视频输出</li>
 </ol>
 </p></div><div class="body"><p>1.1 通过 AE 导出视频格式（AVI 视频）后，再通过 PS 导出 GIF<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img2.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img2.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>1.2 将视频拖进 PS 后，导出 GIF 操作如下“文件 —— 导出 —— 存储 Web 所用格式旧版 —— 存储完成”这样输出的质量偏差、体积一般。<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img3.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img3.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img4.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img4.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p></div></div>
-
-<!-- 节点2 -->
 
 <div class="timenode"><div class="meta"><p><ol start="2">
 <li>PS + 序列图</li>
 </ol>
 </p></div><div class="body"><p>2.1 通过 AE 导出 PNG 序列图后，再通过 PS 导出 GIF<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-5.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-5.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>2.2 序列图文件夹拖进 PS 方法（文件 —— 打开 —— 选择第一张图 —— 必须勾选图像顺序 —— 打开）<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img6.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img6.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>2.3 导出操作方法和视频用 PS 导出 GIF 方法一样，这样输出的质量一般、体积一般。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">注意：PS到处是GIF有时会失败，可能原因:</span><br><span class="line">1. 动画时间过长</span><br><span class="line">2. 图像尺寸太大</span><br><span class="line">3. FPS的数量限制（FPS就是每秒有多少帧）</span><br><span class="line">4. 莫名其妙的失败</span><br></pre></td></tr></table></figure></div></div>
 
-<!-- 节点3 -->
-
 <div class="timenode"><div class="meta"><p><ol start="3">
 <li>AE插件GIFFUN直接导出</li>
 </ol>
 </p></div><div class="body"><p>自行搜索插件-安装-导出<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img8.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img8.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p></div></div>
+</div>
 
-<!-- 节点4 -->
+<!-- 轴2 -->
 
-<div class="timenode"><div class="meta"><p><ol start="4">
+<h3 id="②-视频"><a href="#②-视频" class="headerlink" title="② 视频"></a>② <strong>视频</strong></h3><div class="timeline"><div class="timenode"><div class="meta"><p><ol start="4">
 <li>视频</li>
 </ol>
-</p></div><div class="body"><p><code>实现成本低，兼容性强，能够直接播放视频、音频的有损文件，体积一般。一般用在宣传、开屏、演示如抖音、快手的开屏动画。讲下 MP4 的输出和压缩方案</code></br><br>4.1 将视频拖入 PS，然后通过 PS 导出 MP4<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img9.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img9.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>4.2 AE 导出视频的方法：AE —— 合成 ——添加到渲染队列 —— 选择 Quicktime —— 选择输出路径 ——确定<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img10.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img10.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao11.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao11.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>1.3 将视频拖入 PS 后导出 MP4 的方法：PS —— 文件 ——导出 —— 渲染视频 —— 命好名字 —— 选择文件夹（输出到哪）—— 品质高中低（品质越高内存越大）—— 渲染<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao13.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao13.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao14.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao14.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><p><code>压缩视频的方案有——Handbrake、格式工厂、Adobe Media Encode。使handbrake无需特别技巧便可直接将DVD电影内转换成AVI/MPEG4格式,还有MP4及OGM输出、AAC 及 Vorbis 编码</code></p></div></div></div>
+</p></div><div class="body"><p><code>实现成本低，兼容性强，能够直接播放视频、音频的有损文件，体积一般。一般用在宣传、开屏、演示如抖音、快手的开屏动画。讲下 MP4 的输出和压缩方案</code></br><br>4.1 将视频拖入 PS，然后通过 PS 导出 MP4<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img9.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img9.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>4.2 AE 导出视频的方法：AE —— 合成 ——添加到渲染队列 —— 选择 Quicktime —— 选择输出路径 ——确定<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img10.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao-img10.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao11.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao11.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>1.3 将视频拖入 PS 后导出 MP4 的方法：PS —— 文件 ——导出 —— 渲染视频 —— 命好名字 —— 选择文件夹（输出到哪）—— 品质高中低（品质越高内存越大）—— 渲染<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao13.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao13.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao14.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao14.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><p><code>压缩视频的方案有——Handbrake、格式工厂、Adobe Media Encode。使handbrake无需特别技巧便可直接将DVD电影内转换成AVI/MPEG4格式,还有MP4及OGM输出、AAC 及 Vorbis 编码</code></p></div></div>
+</div>
 
-<p style="color: green; text-align: center" >未完待续，剩下的更精彩哦~</p>
+<!-- 轴3 -->
+
+<h3 id="③-精灵图"><a href="#③-精灵图" class="headerlink" title="③ 精灵图"></a>③ <strong>精灵图</strong></h3><div class="note"><p>序列帧是无损且低内存的格式，能在客户端使用，不建议在 Web 环境中使用（在网页中引发几十次的刷新），在工作中我们会经常遇到前端这样说帮我把图标合成一张“精灵图”吧，其实它的真正的名称是Sprite图，也就是说把需要的全部图标合成在一张背景图，这样就可以很好的解决问题，我们会使用到CSS Sprite Exporter这个脚本完成精灵图的输出。</p></div>
+<div class="timeline"><div class="timenode"><div class="meta"><p></p></div><div class="body"><p><strong>先讲下 CSS Sprite Exporter 安装方法：</strong>访达 —— 应用程序 —— AE 文件夹 —— Scripts —— ScriptUI Panels —— 将文件粘贴在这里。<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao15.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao15.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>AE 脚本 CSS Sprite Exporter，能够一键导出精灵图与开发所需的代码。导出使用方法：AE —— 窗口 —— CSS Sprite Exporter<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao16.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao16.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><strong>注意：</strong>默认为宽度为 5000px，所以最终导出的大图宽度为 5000px。参数设置好之后点击“生成”会导出两个文件代码和图片然后一并交给开发。<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao17.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao17.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p></div></div>
+</div>
+
+<!-- 轴4 -->
+
+<h3 id="④-APNG-WEBP"><a href="#④-APNG-WEBP" class="headerlink" title="④ APNG/WEBP"></a>④ <strong>APNG/WEBP</strong></h3><div class="timeline"><div class="timenode"><div class="meta"><p></p></div><div class="body"><p>APNG 格式诞生于 2004 年，是基于 png 格式的动画格式图片，它的动图后缀依然是.png，因为兼容性问题没有像 GIF 这般普及，一张图看懂二者的优劣。<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao18.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao18.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br>WEBP 最初在 2010 年发布，目标是减少文件大小，但达到和 JPEG 格式相同的图片质量，基本兼容所有的主流浏览器，相同的效果 webp 格式要比 png 格式小出来大概一半的大小，同时他也兼容所有的安卓设备，像一些 ios 设备需要通过一定的方式才可以支持，不过相比来说各方面的表现都是非常优秀的。<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao19.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao19.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><p><strong>导出：</strong>通过 iSparta 软件导出，将 AE 输出好的序列图拖拽到 iSparta 软件中点击开始即可导出 APNG/GIF/WEBP（GIF 通过此软件导出质量偏差）<br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao20.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dongxiao20.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p></div></div>
+</div>
+
+<!-- 轴5 -->
+
+<h3 id="⑤-LOTTIE-SVGA"><a href="#⑤-LOTTIE-SVGA" class="headerlink" title="⑤ LOTTIE/SVGA"></a>⑤ <strong>LOTTIE/SVGA</strong></h3><p><code>抛开本质区别，二者是近几年最主流的动画落地方式，满足很多种类的矢量动画和图片动画，SVGA相对LOTTIE更加稳定但支持的AE特性也少一些。</code></p>
+<div class="timeline"><div class="timenode"><div class="meta"><p></p></div><div class="body"><ol><li>Lottie 是 airbnb 开源的支持 iOS、Android、React Native 的动画库。原理是把我们的各种矢量元素以及位图图层以及他们的效果关键节点打包的形式行成一个 Json 格式的文行。导出用到的 AE 插件：<code>Bodymovin</code></li></ol><p><strong>操作方法：点击 AE —— 窗口 —— 扩展 —— Bodymovin —— 勾选绿圆圈、点击右侧三个绿色的点选择输出路径 —— 点击 Render 完成输出</strong><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao21.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao21.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao22.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@1.1/wenzhang/dongxiao22.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p><ol start="2"><li>SVGA 是一种同时兼容 iOS / Android / Flutter / Web 多个平台的动画格式。动画文件体积更小，播放资源占用更优，动画还原效果更好。导出用到的 AE 插件：<code>SVGAConverter</code></li></ol><p><strong>操作方法：点击 AE 窗口 —— 扩展 —— SVGAConverter —— 选择输出路径 —— 开始完成输出</strong></p></div></div>
+</div>
 
 <details green><summary> <p>版权声明：该文章来自<a target="_blank" rel="noopener" href="https://www.zcool.com.cn/article/ZMTE3MzgyOA==.html">是北瓜呀（站酷）</a>如有冒犯，请留言，致歉侵删，谢谢！</p> </summary>
               <div class='content'>
@@ -968,7 +982,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-07T13:58:58+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-07T15:52:46+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年9月7日</p>
@@ -1041,11 +1055,6 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/07/%E5%A4%A7%E5%8E%82%E5%8A%A8%E6%95%88%E8%90%BD%E5%9C%B0%20copy/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>大厂动效落地</p>
-          <p class='content'>前言常见的有 Loading 动画、卡牌抽取动画、徽章展示动画等等。动画有简单的、有复杂的、有时间短的、有时间长的、有特效的，导致我们的落地方案呈现多样化。上面所述的动画我们把它归类为直接落地输...</p>
-        </a>
-      
       
         <a class='next' href='/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
           <p class='title'>Hexo+coding+gitee博客搭建之旅<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
@@ -1092,7 +1101,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BE%93%E5%87%BA%E6%96%B9%E6%A1%88"><span class="toc-text">几种常用的输出方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0-GIF"><span class="toc-text">① GIF</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%A0%E7%A7%8D%E5%B8%B8%E7%94%A8%E7%9A%84%E8%BE%93%E5%87%BA%E6%96%B9%E6%A1%88"><span class="toc-text">几种常用的输出方案</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A0-GIF"><span class="toc-text">① GIF</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A1-%E8%A7%86%E9%A2%91"><span class="toc-text">② 视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A2-%E7%B2%BE%E7%81%B5%E5%9B%BE"><span class="toc-text">③ 精灵图</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A3-APNG-WEBP"><span class="toc-text">④ APNG&#x2F;WEBP</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E2%91%A4-LOTTIE-SVGA"><span class="toc-text">⑤ LOTTIE&#x2F;SVGA</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -1114,7 +1123,7 @@
 
 
     <div class='content'>
-      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/UI/" style="font-size: 24px; color: #555">UI</a> <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/fontawesome/" style="font-size: 14px; color: #999">fontawesome</a> <a href="/tags/icon/" style="font-size: 14px; color: #999">icon</a> <a href="/tags/%E5%89%8D%E8%A8%80/" style="font-size: 14px; color: #999">前言</a> <a href="/tags/%E5%8A%A8%E6%95%88/" style="font-size: 24px; color: #555">动效</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a>
+      <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/UI/" style="font-size: 14px; color: #999">UI</a> <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/fontawesome/" style="font-size: 14px; color: #999">fontawesome</a> <a href="/tags/icon/" style="font-size: 14px; color: #999">icon</a> <a href="/tags/%E5%89%8D%E8%A8%80/" style="font-size: 14px; color: #999">前言</a> <a href="/tags/%E5%8A%A8%E6%95%88/" style="font-size: 14px; color: #999">动效</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a>
     </div>
   </section>
 
