@@ -125,7 +125,6 @@ table {
 }
 * {
   box-sizing: border-box;
-  font-family: "寰蒋闆呴粦";
 }
 h1 {
   text-align: center;
@@ -135,8 +134,9 @@ h1 {
   color: #333;
 }
 #waterfall {
-  column-count: 3;
-  width: 1200px;
+  /* 列数 */
+  column-count: 4;
+  width: 100%;
   margin: 0 auto;
   column-gap: 15px;
 }
