@@ -77,7 +77,7 @@ html >::-webkit-scrollbar-thumb:hover {
   background: #ff5722;
 }
 body {
-  background-image: url("https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/bg-img.png");
+  background-image: url("/images/bg-img.png") !important;
   background-color: var(--color-site-bg);
   text-rendering: optimizelegibility;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
