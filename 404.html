@@ -47,8 +47,6 @@
   
 
   
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
-  
 
   
 
@@ -637,22 +635,6 @@
         <div class="aplayer-container">
           
 
-  
-    <meting-js
-      theme='#1BCDFC'
-      autoplay='true'
-      volume='0.7'
-      loop='all'
-      order='list'
-      fixed='false'
-      list-max-height='320px'
-      server='netease'
-      type='playlist'
-      id='2673431179'
-      list-folded='true'>
-    </meting-js>
-  
-
 
         </div>
       
@@ -831,26 +813,6 @@
         
       
         
-          <li class='music name'>
-            <p class='nav music-title fix-cursor-default'></p>
-          </li>
-          <li class='music ctrl'>
-            <a class='nav icon-only backward fix-cursor-default' onclick='aplayerBackward()'><i class='fa fa-step-backward fa-fw'></i></a>
-            <a class='nav icon-only toggle fix-cursor-default' onclick='aplayerToggle()'><i class='fa fa-play fa-fw'></i></a>
-            <a class='nav icon-only forward fix-cursor-default' onclick='aplayerForward()'><i class='fa fa-step-forward fa-fw'></i></a>
-          </li>
-          <li class='music volume'>
-            <a class='nav volume'>
-              <div class="aplayer-volume-bar-wrap">
-                <div class="aplayer-volume-bar fix-cursor-pointer">
-                  <div class="aplayer-volume"></div>
-                  <i class='left fa fa-volume-off fa-fw'></i>
-                  <i class='right fa fa-volume-up fa-fw'></i>
-                </div>
-              </div>
-            </a>
-          </li>
-        
       
     </ul>
   </div>
@@ -953,7 +915,7 @@
       }
 
       // 有音乐播放器
-      if (true == true && ('home,help,examples,contributors,hr,source_theme,hr,music'||[]).includes('music')) {
+      if (false == true && ('home,help,examples,contributors,hr,source_theme,hr,music'||[]).includes('music')) {
         // 如果有aplayer，初始化一下
       	try {
       		checkAPlayer();
@@ -1159,28 +1121,6 @@
 
 
 
-  <script>
-  let APlayerController = new Object();
-  APlayerController.id = '2673431179';  // 设定全局音乐播放ID
-  APlayerController.volume = '0.7';
-</script>
-
-  
-<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script>
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/meting@2.0/dist/Meting.min.js"></script>
-
-
-
-
-  
-<script src="/js/aplayer.js"></script>
-
-
-
-
 
 
   
@@ -1257,6 +1197,89 @@
 </script>
 
 
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
+
+<script type="text/javascript">
+function getClientHeight(){
+  var clientHeight=0;
+  if(document.body.clientHeight&&document.documentElement.clientHeight){
+  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }else{
+  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
+  }
+  return clientHeight;
+}
+function supportCss3(style) {
+  var prefix = ['webkit', 'Moz', 'ms', 'o'],
+  i,
+  humpString = [],
+  htmlStyle = document.documentElement.style,
+  _toHumb = function (string) {
+  return string.replace(/-(\w)/g, function ($0, $1) {
+  return $1.toUpperCase();
+  });
+  };
+  for (i in prefix)
+  humpString.push(_toHumb(prefix[i] + '-' + style));
+  humpString.push(_toHumb(style));
+  for (i in humpString)
+  if (humpString[i] in htmlStyle) return true;
+  return false;
+};
+//配置信息
+var options = {
+  bottom: '32px',
+  right: 'unset',
+  left: '16px',
+  time: '0s',
+  mixColor: '#f4f4f4',
+  backgroundColor: '#f4f4f4',
+  buttonColorDark: '#333',
+  buttonColorLight: '#ddd',
+  saveInCookies: true,
+  label: '',
+  autoMatchOsTheme: true
+};
+// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
+
+function pjax_darkmodejs(){
+  
+  if(!supportCss3('mix-blend-mode'))return;
+  var checkExist2 = setInterval(function() {
+     if (typeof jQuery == 'undefined'){return;}
+     clearInterval(checkExist2);
+     var TopFlag=getClientHeight();
+    $(window).scroll(function(){
+      var top = $(document).scrollTop();
+      if(top > TopFlag) {
+        $(".darkmode-layer").css("mix-blend-mode","normal");
+        $(".darkmode-layer").css("background-color","#222");
+      }else{
+        $(".darkmode-layer").css("mix-blend-mode","difference");
+        $(".darkmode-layer").css("background-color","");
+      }
+    })
+  }, 100);
+  
+}
+// mix-blend-mode support?
+if(supportCss3('mix-blend-mode')){
+  window.darkmode = new Darkmode(options);
+  
+  window.darkmode.showWidget();
+  
+  pjax_darkmodejs();
+}
+////////////////Development///////////////////////
+//////////////darkmode模式切换////////////////////
+//window.darkmode.toggle();                     //
+//////////////darkmode模式判断////////////////////
+//console.log(window.darkmode.isActivated())    //
+//////////////////////////////////////////////////
+</script>
 
 
 
@@ -1593,6 +1616,8 @@
         
         
         
+        
+          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);
