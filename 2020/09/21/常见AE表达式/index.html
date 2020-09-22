@@ -107,7 +107,7 @@
                   
                     id="home"
                   >
-                  <i class='fas fa-flag faa-flash fa-fw fa-fw'></i>Home
+                  <i class='fas fa-umbrella faa-flash fa-fw fa-fw'></i>Home
                 </a>
                 
               </li>
@@ -203,7 +203,7 @@
                   
                   
                   >
-                  <i class='fa fa-question-circle faa-shake fa-fw fa-fw'></i>Hexo
+                  <i class='fa fa-leaf faa-shake fa-fw fa-fw'></i>Hexo
                 </a>
                 
                   <ul class="list-v">
@@ -291,7 +291,7 @@
                   
                     id="home"
                   >
-                  <i class='fas fa-flag faa-flash fa-fw fa-fw'></i>Home
+                  <i class='fas fa-umbrella faa-flash fa-fw fa-fw'></i>Home
                 </a>
                 
               </li>
@@ -387,7 +387,7 @@
                   
                   
                   >
-                  <i class='fa fa-question-circle faa-shake fa-fw fa-fw'></i>Hexo
+                  <i class='fa fa-leaf faa-shake fa-fw fa-fw'></i>Hexo
                 </a>
                 
                   <ul class="list-v">
@@ -807,6 +807,13 @@
 <p><img src="https://img.zcool.cn/community/01c83e5f3ea963a801215aa034bc8c.gif" class="lazyload" data-srcset="https://img.zcool.cn/community/01c83e5f3ea963a801215aa034bc8c.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="案例效果"></p>
 </li>
 </ul>
+<!-- 版权声明 -->
+
+<details green><summary> <p>版权声明：该文章来自<a target="_blank" rel="noopener" href="https://www.zcool.com.cn/article/ZMTE3MDM2OA==.html">凌旬（站酷）</a>如有冒犯，请留言，致歉侵删，谢谢！</p> </summary>
+              <div class='content'>
+              <p><a target="_blank" rel="noopener" href="https://www.zcool.com.cn/article/ZMTE3MDM2OA==.html">https://www.zcool.com.cn/article/ZMTE3MDM2OA==.html</a></p>
+              </div>
+            </details>
 
   
     
@@ -835,7 +842,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-22T09:54:08+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-22T17:36:57+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年9月22日</p>
@@ -940,7 +947,14 @@
     <div id="valine_container" class="valine_thread">
   <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
-
+<!-- valine 添加一言 -->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function (result) {
+    var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+    document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+  });
+</script>
   </article>
 
 
@@ -1570,7 +1584,7 @@
 
 
   
-  
+
 <script src="/js/valine.js"></script>
 
 
@@ -1606,7 +1620,7 @@
   }
 
   function pjax_valine() {
-    if(!document.querySelectorAll("#valine_container")[0])return;
+    if (!document.querySelectorAll("#valine_container")[0]) return;
 
     let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) || "快来评论吧~";
 
@@ -1641,7 +1655,6 @@
     pjax_valine();
   });
 </script>
-
 
 
 

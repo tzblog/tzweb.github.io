@@ -107,7 +107,7 @@
                   
                     id="home"
                   >
-                  <i class='fas fa-flag faa-flash fa-fw fa-fw'></i>Home
+                  <i class='fas fa-umbrella faa-flash fa-fw fa-fw'></i>Home
                 </a>
                 
               </li>
@@ -203,7 +203,7 @@
                   
                   
                   >
-                  <i class='fa fa-question-circle faa-shake fa-fw fa-fw'></i>Hexo
+                  <i class='fa fa-leaf faa-shake fa-fw fa-fw'></i>Hexo
                 </a>
                 
                   <ul class="list-v">
@@ -291,7 +291,7 @@
                   
                     id="home"
                   >
-                  <i class='fas fa-flag faa-flash fa-fw fa-fw'></i>Home
+                  <i class='fas fa-umbrella faa-flash fa-fw fa-fw'></i>Home
                 </a>
                 
               </li>
@@ -387,7 +387,7 @@
                   
                   
                   >
-                  <i class='fa fa-question-circle faa-shake fa-fw fa-fw'></i>Hexo
+                  <i class='fa fa-leaf faa-shake fa-fw fa-fw'></i>Hexo
                 </a>
                 
                   <ul class="list-v">
@@ -836,7 +836,14 @@
     <div id="valine_container" class="valine_thread">
   <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
 </div>
-
+<!-- valine 添加一言 -->
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+  jinrishici.load(function (result) {
+    var jrsc_plac = result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+    document.getElementById("veditor").setAttribute("placeholder", jrsc_plac);
+  });
+</script>
   </article>
 
 
@@ -1395,7 +1402,7 @@
 
 
   
-  
+
 <script src="/js/valine.js"></script>
 
 
@@ -1431,7 +1438,7 @@
   }
 
   function pjax_valine() {
-    if(!document.querySelectorAll("#valine_container")[0])return;
+    if (!document.querySelectorAll("#valine_container")[0]) return;
 
     let pagePlaceholder = $.trim($('#pjax-comment-placeholder').text()) || "快来评论吧~";
 
@@ -1466,7 +1473,6 @@
     pjax_valine();
   });
 </script>
-
 
 
 
