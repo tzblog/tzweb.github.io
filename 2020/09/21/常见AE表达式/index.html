@@ -56,6 +56,12 @@
   
 
   
+    
+      
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.18.1/styles/solarized-light.css">
+
+    
+  
   
     
 <link rel="stylesheet" href="/css/style.css">
@@ -608,20 +614,6 @@
           
         
           
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="常见AE表达式" data-path="/2020/09/21/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/">
-        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
         
       </div>
     
@@ -631,58 +623,36 @@
   
   
   <hr>
-<p>AE 表达式：AE 内部基于 JS 编程语言开发的编辑工具，可以理解为简单的编程，却远没其那么复杂。表达式大部分情况下可以更节省时间也更方便，很好的提高工作效率，但具体使用情况还需根据实际情况而定。</p>
-<h2 id="表达式工具"><a href="#表达式工具" class="headerlink" title="表达式工具"></a>表达式工具</h2><p>A.表达式开关 B.表达式图表 C.表达式关联器 D.表达式语言菜单</p>
-<p><img src="https://img.zcool.cn/community/01c98e5f3ea6a8a80120a821fbf248.jpg" class="lazyload" data-srcset="https://img.zcool.cn/community/01c98e5f3ea6a8a80120a821fbf248.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"></p>
-<h2 id="1-time"><a href="#1-time" class="headerlink" title="1. time"></a>1. time</h2><p>书写：</p>
-<blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time * n;</span><br></pre></td></tr></table></figure>
-</blockquote>
-<p>解析：</p>
-<blockquote>
-<p>time（单位为‘S 秒’），n（数值，若用于旋转则为‘角度’）</p>
-</blockquote>
-<p>举例：</p>
-<blockquote>
-<p>该图层将通过 1 秒的时间旋转 60 度，2 秒时旋转 120 度，3 秒时旋转 180 度……</p>
-<blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time * <span class="number">60</span>;</span><br></pre></td></tr></table></figure>
+<div class="note blue"><p><strong>AE 表达式：</strong><br />AE 内部基于 JS 编程语言开发的编辑工具，可以理解为简单的编程，却远没其那么复杂。表达式大部分情况下可以更节省时间也更方便，很好的提高工作效率，但具体使用情况还需根据实际情况而定。</p></div>
 
-<p><img src="https://img.zcool.cn/community/01961d5f3ea719a801215aa0e3ea43.jpg" class="lazyload" data-srcset="https://img.zcool.cn/community/01961d5f3ea719a801215aa0e3ea43.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"></p>
-</blockquote>
-<p>图层从 x=50 的位置开始以每秒 200 的速度向右平移</p>
-<blockquote>
+
+<h2 id="表达式工具"><a href="#表达式工具" class="headerlink" title="表达式工具"></a>表达式工具</h2><p>A.表达式开关&nbsp;&nbsp;B.表达式图表 &nbsp;&nbsp;C.表达式关联器&nbsp;&nbsp; D.表达式语言菜单</p>
+<p><img src="https://img.zcool.cn/community/01c98e5f3ea6a8a80120a821fbf248.jpg" class="lazyload" data-srcset="https://img.zcool.cn/community/01c98e5f3ea6a8a80120a821fbf248.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"></p>
+<h2 id="1-time"><a href="#1-time" class="headerlink" title="1. time"></a>1. time</h2><figure class="highlight js"><figcaption><span>书写：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time * n;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight txt"><figcaption><span>解析：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time（单位为‘S 秒’），n（数值，若用于旋转则为‘角度’）</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>举例：该图层将通过 1 秒的时间旋转 60 度，2 秒时旋转 120 度，3 秒时旋转 180 度</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time * <span class="number">60</span>;</span><br></pre></td></tr></table></figure>
+<p><img src="https://img.zcool.cn/community/01961d5f3ea719a801215aa0e3ea43.jpg" class="lazyload" data-srcset="https://img.zcool.cn/community/01961d5f3ea719a801215aa0e3ea43.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="img"><br>图层从 x=50 的位置开始以每秒 200 的速度向右平移</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">time * [<span class="number">200</span>] + <span class="number">50</span>;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
+
 <p><strong>注意：</strong></p>
 <blockquote>
 <p>time 只能赋予一维属性的数据。（位置属性可进行单独尺寸的分离，从而可单独设置 X 或 Y 上的 time）</p>
 <p><strong>单独尺寸方法：点击位置属性 → 右击 → 单独尺寸</strong></p>
 </blockquote>
-<h2 id="2-抖动-摆动表达式"><a href="#2-抖动-摆动表达式" class="headerlink" title="2. 抖动/摆动表达式"></a>2. 抖动/摆动表达式</h2><p>书写：</p>
-<blockquote>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wiggle(freq, amp, (octaves = <span class="number">1</span>), (amp_mult = <span class="number">0.5</span>), (t = time));</span><br></pre></td></tr></table></figure>
-</blockquote>
+<h2 id="2-抖动-摆动表达式"><a href="#2-抖动-摆动表达式" class="headerlink" title="2. 抖动/摆动表达式"></a>2. 抖动/摆动表达式</h2><figure class="highlight js"><figcaption><span>书写：</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wiggle(freq, amp, (octaves = <span class="number">1</span>), (amp_mult = <span class="number">0.5</span>), (t = time));</span><br></pre></td></tr></table></figure>
+
 <p>解析：</p>
 <blockquote>
-<p>freq=频率（设置美妙抖动的频率）；amp=振幅（每次抖动的幅度）；octaves=振幅幅度（在每次振幅的基础上还会进行一定的振幅幅度，很少用）；amp<em>mult=频率倍频（默认值即可，数值越接近 0 ，细节越少，反之越多）；t=持续时间（抖动时间为合成时间，一般无需更改），</em>一般只用书写前两个值_</p>
+<p>freq=频率（设置美妙抖动的频率）；amp=振幅（每次抖动的幅度）；octaves=振幅幅度（在每次振幅的基础上还会进行一定的振幅幅度，很少用）；<br>amp<em>mult=频率倍频（默认值即可，数值越接近 0 ，细节越少，反之越多）；t=持续时间（抖动时间为合成时间，一般无需更改），</em>一般只用书写前两个值_</p>
 </blockquote>
 <p>举例：</p>
-<blockquote>
-<p>一维属性中，为位置添加</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wiggle(<span class="number">10</span>, <span class="number">20</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>一维属性中，为位置添加</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wiggle(<span class="number">10</span>, <span class="number">20</span>);</span><br></pre></td></tr></table></figure>
 
-<blockquote>
 <p>表示图层美妙抖动 10 次，每次随机波动幅度为 20</p>
-</blockquote>
-<p>二维属性中，为缩放添加</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = wiggle(<span class="number">1</span>, <span class="number">10</span>);</span><br><span class="line">[n[<span class="number">0</span>], n[<span class="number">0</span>]];</span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><figcaption><span>二维属性中，为缩放添加</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">n = wiggle(<span class="number">1</span>, <span class="number">10</span>);</span><br><span class="line">[n[<span class="number">0</span>], n[<span class="number">0</span>]];</span><br></pre></td></tr></table></figure>
 
-<blockquote>
 <p>表示图层的缩放 XY 在每秒抖动 10 次，每次随机波动幅度为 20</p>
-</blockquote>
-</blockquote>
 <h2 id="3-index（索引表达式）"><a href="#3-index（索引表达式）" class="headerlink" title="3. index（索引表达式）"></a>3. index（索引表达式）</h2><p>原理：</p>
 <blockquote>
 <p>为每间隔多少数值来产生多少变化</p>
@@ -842,7 +812,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-22T17:36:57+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-22T22:17:35+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年9月22日</p>
@@ -1074,7 +1044,7 @@
 
 
     <div class='content'>
-      <a href="/tags/AE/" style="font-size: 14px; color: #999">AE</a> <a href="/tags/Coding/" style="font-size: 14px; color: #999">Coding</a> <a href="/tags/Hexo/" style="font-size: 24px; color: #555">Hexo</a> <a href="/tags/UI/" style="font-size: 19px; color: #777">UI</a> <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/Web/" style="font-size: 14px; color: #999">Web</a> <a href="/tags/fontawesome/" style="font-size: 14px; color: #999">fontawesome</a> <a href="/tags/icon/" style="font-size: 14px; color: #999">icon</a> <a href="/tags/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" style="font-size: 14px; color: #999">主题优化</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/" style="font-size: 14px; color: #999">前端技巧</a> <a href="/tags/%E5%8A%A8%E6%95%88/" style="font-size: 19px; color: #777">动效</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a> <a href="/tags/%E5%A1%AB%E5%9D%91/" style="font-size: 14px; color: #999">填坑</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">读书笔记</a>
+      <a href="/tags/AE/" style="font-size: 14px; color: #999">AE</a> <a href="/tags/Coding/" style="font-size: 14px; color: #999">Coding</a> <a href="/tags/Hexo/" style="font-size: 24px; color: #008000">Hexo</a> <a href="/tags/UI/" style="font-size: 19px; color: #4d8d4d">UI</a> <a href="/tags/Volantis/" style="font-size: 14px; color: #999">Volantis</a> <a href="/tags/Web/" style="font-size: 14px; color: #999">Web</a> <a href="/tags/fontawesome/" style="font-size: 14px; color: #999">fontawesome</a> <a href="/tags/icon/" style="font-size: 14px; color: #999">icon</a> <a href="/tags/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/" style="font-size: 14px; color: #999">主题优化</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E6%8A%80%E5%B7%A7/" style="font-size: 14px; color: #999">前端技巧</a> <a href="/tags/%E5%8A%A8%E6%95%88/" style="font-size: 19px; color: #4d8d4d">动效</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 14px; color: #999">博客</a> <a href="/tags/%E5%A1%AB%E5%9D%91/" style="font-size: 14px; color: #999">填坑</a> <a href="/tags/%E7%94%9F%E6%B4%BB/" style="font-size: 14px; color: #999">生活</a> <a href="/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" style="font-size: 14px; color: #999">读书笔记</a>
     </div>
   </section>
 
@@ -1507,19 +1477,6 @@
 
 
 
-  
-  
-    <script>
-      window.FPConfig = {
-        delay: 0,
-        ignoreKeywords: [],
-        maxRPS: 5,
-        hoverDelay: 25
-      };
-    </script>
-    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
-  
-
 
 
 
@@ -1762,6 +1719,13 @@ if(supportCss3('mix-blend-mode')){
 
 
 
+
+  
+    
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.18.1/build/highlight.min.js"></script>
+
+    <script>hljs.initHighlightingOnLoad();</script>
+  
 
 
 
@@ -2064,6 +2028,10 @@ if(supportCss3('mix-blend-mode')){
       try{
         pjax_fancybox();
         
+        
+        document.querySelectorAll('pre code').forEach((block) => {
+          hljs.highlightBlock(block);
+        });
         
         
         

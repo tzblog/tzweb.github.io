@@ -2058,6 +2058,7 @@ pre {
   background-color: transparent;
 }
 .highlight >table .gutter {
+  display: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -webkit-user-select: none;
