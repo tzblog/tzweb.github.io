@@ -1074,7 +1074,7 @@
         timelag = window.setTimeout(callback, seconds)
     }
     function pjax_initCopyCode() {
-		if($(".highlight .code pre").length+$(".article pre code").length==0)return;
+        if ($(".highlight .code pre").length + $(".article pre code").length == 0) return;
         var copyHtml = '';
         copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
         copyHtml += '<i class="fas fa-copy"></i><span>COPY</span>';
@@ -1082,6 +1082,11 @@
         $(".highlight .code pre").before(copyHtml);
         $(".article pre code").before(copyHtml);
         clipboard.off('success').on('success', function (e) {
+            $.message({
+                title: '复制成功',
+                message: "代码已复制，请遵守相关授权协议。",
+                type: 'success'
+            });
             let $btn = $(e.trigger);
             $btn.addClass('copied');
             let $icon = $($btn.find('i'));
@@ -1115,7 +1120,6 @@
         pjax_initCopyCode()
     });
 </script>
-
 
 
 
