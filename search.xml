@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>Volantis 主题优化</title>
+      <link href="/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
+      <url>/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p style="text-align: center; color: #999;"><i></i></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+          <category> 主题优化 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 主题优化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>常见AE表达式</title>
       <link href="/2020/09/22/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
       <url>/2020/09/22/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/</url>
@@ -33,7 +62,7 @@
     
     
     <entry>
-      <title>Hexo填坑</title>
+      <title>Hexo搭建填坑</title>
       <link href="/2020/09/16/Hexo%E5%A1%AB%E5%9D%91/"/>
       <url>/2020/09/16/Hexo%E5%A1%AB%E5%9D%91/</url>
       
@@ -43,8 +72,6 @@
       <categories>
           
           <category> Hexo </category>
-          
-          <category> Hexo填坑 </category>
           
           <category> 主题优化 </category>
           
