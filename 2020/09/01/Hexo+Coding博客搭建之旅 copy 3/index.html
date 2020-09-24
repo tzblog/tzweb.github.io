@@ -16,13 +16,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>fontawesome 图标使用教程 - 小酒微醺</title>
+  <title>Hexo+coding+gitee博客搭建之旅 - 小酒微醺</title>
   
-    <meta name="keywords" content="Hexo,icon,fontawesome">
+    <meta name="keywords" content="Hexo,博客,Volantis,Coding">
   
 
-  
-    <meta name="description" content="在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法">
   
 
   <!-- feed -->
@@ -510,7 +508,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">fontawesome 图标使用教程</div>
+  <div id="pjax-pageTitle">Hexo+coding+gitee博客搭建之旅</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -547,10 +545,14 @@
   
   <div class="article-meta" id="top">
     
+      
+
+
+    
     
     
       <h1 class="title">
-        fontawesome 图标使用教程
+        Hexo+coding+gitee博客搭建之旅
       </h1>
       <div class='new-meta-box'>
         
@@ -570,7 +572,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">主题优化</a>
+      <a class="category-link" href="/categories/Hexo/">Hexo</a>
     </a>
   </div>
 
@@ -581,7 +583,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月4日</p>
+    <p>发布于：2020年9月1日</p>
   </a>
 </div>
 
@@ -596,25 +598,38 @@
 
   
   
-  <p>在 hexo 博客中使用 fontawesome 图标有两种方式，一种是<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载安装</a>，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法</p>
-<a id="more"></a>
+  <p style="color: #999; text-align: center; line-height: 1.6rem; font-size: 13px">作为一个UI设计师<span style="color: #ccc">（纯前端小白）</span>，这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是蹭蹭的往上飙，爱上这种感觉了，所以，我决定学习前端，享受代码实现效果的快感--仰天长笑</p>
 
-<div class="tag link"><a class="link-card" title="fontawesome 图标官网" target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">fontawesome 图标官网</p><p class="url">https://fontawesome.dashgame.com/#basic</p></div></a></div>
+<hr>
+<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>安装<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">长期支持版 Nodo.js</a></p>
+            </div>
 
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ol>
-<li><p>点击链接<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载文件</a>在本地<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" class="lazyload" data-srcset="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
-</li>
-<li><p>解压、复制 <code>font-awesome/</code> 目录到您的项目中。</p>
-</li>
-<li><p>打开 <code>font-awesome/less/variables.less</code> 文件或 <code>font-awesome/scss/_variables.scss</code>文件 ，然后修改 <code>@fa-font-path</code> 或 <code>$fa-font-path</code> 为您的字体目录.</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@fa-font-path:</span>   <span class="string">&quot;&quot;</span>../../themes/volantis/source/fonts&quot;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在需要使用<code>icon</code>的地方调用：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-home</span> <span class="string">fa-fw</span></span><br><span class="line"><span class="comment"># 您可以将Font Awesome图标使用在几乎任何地方，只需要使用CSS前缀 fa ，再加上图标名称(home)。</span></span><br></pre></td></tr></table></figure>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>安装<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>版本</p>
+            </div>
 
-</li>
-</ol>
-<p><span style="color: #999"><strong>注:</strong>  在图标尾部 <code>fa-fw</code>这类为图标样式，更多可参照<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">官网文档</a> </span></p>
+<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
+            <p>创建<a target="_blank" rel="noopener" href="https://coding.net/">Coding</a>仓库</p>
+            </div>
+
+<details green><summary> <p>Coding仓库创建</p> </summary>
+              <div class='content'>
+              <p>dsfasdd</p>
+              </div>
+            </details>
+
+<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><h4 id="检验环境搭建情况"><a href="#检验环境搭建情况" class="headerlink" title="检验环境搭建情况"></a>检验环境搭建情况</h4><p><code>打开终端/Win+R cmd 输入两行命令，若出现版本号则成功</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<div class="timeline"><div class="timenode"><div class="meta"><p><p>检验环境搭建情况 <code>打开终端/Win+R cmd 输入两行命令，若出现版本号则成功</code></p>
+</p></div><div class="body"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></div></div>
+<div class="timenode"><div class="meta"><p><p>对Git进行用户名和密码的配置 <a href="">可参考此教程</a></p>
+</p></div><div class="body"><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure><p>查看用户名和用户邮箱</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div></div>
+<div class="timenode"><div class="meta"><p><p>安装淘宝的cnpm 管理器</p>
+</p></div><div class="body"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></div></div>
+<div class="timenode"><div class="meta"><p></p></div><div class="body"></div></div>
+<div class="timenode"><div class="meta"><p></p></div><div class="body"></div></div></div>
 
   
     
@@ -643,7 +658,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-16T15:40:07+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-16T15:59:37+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：2020年9月16日</p>
@@ -662,7 +677,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/04/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
           
           >
           
@@ -674,7 +689,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/04/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
           
           >
           
@@ -686,7 +701,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/04/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
           
           >
           
@@ -721,11 +736,25 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo+coding+gitee博客搭建之旅</p>
-          <p class='content'>作为一个UI设计师（纯前端小白），这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是...</p>
+        <a class='prev' href='/2020/09/14/book/%E6%96%AD-%E8%88%8D-%E7%A6%BB/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>《断舍离》- 山下英子</p>
+          <p class='content'>
+无能为力的事-  当断。命中无缘的人-  当舍。心头烦欲执念-  当离。
+
+
+
+物质上的“丢弃无用之物”仅仅只是“断舍离”的敲门钻，其真正意义在于“心灵上的‘断舍离’”
+</p>
         </a>
       
+      
+        <a class='next' href='/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/'>
+          <p class='title'>fontawesome 图标使用教程<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法
+
+
+fontawesome 图标官...</p>
+        </a>
       
     </div>
   
@@ -762,6 +791,77 @@
     
     
 
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/touxiang-2.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>小酒微醺</h2>
+        
+        
+          <p>相聚有时，后会无期</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/"
+              class="social fab fa-weixin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fab fa-weibo flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/tzblog/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
 
 
   <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
@@ -774,7 +874,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-text">方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-text">开始搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%83%85%E5%86%B5"><span class="toc-text">检验环境搭建情况</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -800,6 +900,8 @@
     </div>
   </section>
 
+
+  
 
   
 
