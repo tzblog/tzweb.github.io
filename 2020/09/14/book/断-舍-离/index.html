@@ -720,20 +720,13 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/16/Web%E9%AA%9A%E6%93%8D%E4%BD%9C/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Web骚操作</p>
-          <p class='content'>
-记录一些有关于代码小技巧，可能是关于前端的，可能是关于生活的，可能是关于...
-
-
-
- 浏览器快捷笔记本 
-              
-              在地址栏输入1234567...</p>
+        <a class='prev' href='/2020/09/16/%E5%A4%A7%E5%8E%82%E5%8A%A8%E6%95%88%E8%90%BD%E5%9C%B0%E6%96%B9%E5%BC%8F/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>大厂动效落地</p>
+          <p class='content'>前言常见的有 Loading 动画、卡牌抽取动画、徽章展示动画等等。动画有简单的、有复杂的、有时间短的、有时间长的、有特效的，导致我们的落地方案呈现多样化。上面所述的动画我们把它归类为直接落地输...</p>
         </a>
       
       
-        <a class='next' href='/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
+        <a class='next' href='/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
           <p class='title'>Hexo+coding+gitee博客搭建之旅<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>作为一个UI设计师（纯前端小白），这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是...</p>
         </a>
@@ -1297,6 +1290,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1433,89 +1439,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1867,8 +1790,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);

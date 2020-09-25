@@ -732,21 +732,15 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/16/%E5%A4%A7%E5%8E%82%E5%8A%A8%E6%95%88%E8%90%BD%E5%9C%B0%E6%96%B9%E5%BC%8F/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>大厂动效落地</p>
-          <p class='content'>前言常见的有 Loading 动画、卡牌抽取动画、徽章展示动画等等。动画有简单的、有复杂的、有时间短的、有时间长的、有特效的，导致我们的落地方案呈现多样化。上面所述的动画我们把它归类为直接落地输...</p>
+        <a class='prev' href='/2020/09/22/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>常见AE表达式</p>
+          <p class='content'>AE 表达式：AE 内部基于 JS 编程语言开发的编辑工具，可以理解为简单的编程，却远没其那么复杂。表达式大部分情况下可以更节省时间也更方便，很好的提高工作效率，但具体使用情况还需根据实际情况而...</p>
         </a>
       
       
-        <a class='next' href='/2020/09/14/book/%E6%96%AD-%E8%88%8D-%E7%A6%BB/'>
-          <p class='title'>《断舍离》- 山下英子<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>
-无能为力的事-  当断。命中无缘的人-  当舍。心头烦欲执念-  当离。
-
-
-
-物质上的“丢弃无用之物”仅仅只是“断舍离”的敲门钻，其真正意义在于“心灵上的‘断舍离’”
-</p>
+        <a class='next' href='/2020/09/16/%E5%A4%A7%E5%8E%82%E5%8A%A8%E6%95%88%E8%90%BD%E5%9C%B0%E6%96%B9%E5%BC%8F/'>
+          <p class='title'>大厂动效落地<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>前言常见的有 Loading 动画、卡牌抽取动画、徽章展示动画等等。动画有简单的、有复杂的、有时间短的、有时间长的、有特效的，导致我们的落地方案呈现多样化。上面所述的动画我们把它归类为直接落地输...</p>
         </a>
       
     </div>
@@ -1251,6 +1245,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1387,89 +1394,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1821,8 +1745,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);

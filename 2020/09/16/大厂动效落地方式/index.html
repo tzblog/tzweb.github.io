@@ -763,22 +763,8 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/16/Hexo%E5%A1%AB%E5%9D%91/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo搭建填坑</p>
-          <p class='content'>
-
-主要记录本人在Hexo博客搭建前，搭建期间，主题优化时等遇到的相关 'Bug'以及解决方法
-当然也有暂无法解决的问题，我会列出来，如果有大神刚好看见，还劳烦解惑~
-
-
-尚未解决😭
-
-   ...</p>
-        </a>
-      
-      
-        <a class='next' href='/2020/09/16/Web%E9%AA%9A%E6%93%8D%E4%BD%9C/'>
-          <p class='title'>Web骚操作<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='prev' href='/2020/09/16/Web%E9%AA%9A%E6%93%8D%E4%BD%9C/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Web骚操作</p>
           <p class='content'>
 记录一些有关于代码小技巧，可能是关于前端的，可能是关于生活的，可能是关于...
 
@@ -787,6 +773,18 @@
  浏览器快捷笔记本 
               
               在地址栏输入1234567...</p>
+        </a>
+      
+      
+        <a class='next' href='/2020/09/14/book/%E6%96%AD-%E8%88%8D-%E7%A6%BB/'>
+          <p class='title'>《断舍离》- 山下英子<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+无能为力的事-  当断。命中无缘的人-  当舍。心头烦欲执念-  当离。
+
+
+
+物质上的“丢弃无用之物”仅仅只是“断舍离”的敲门钻，其真正意义在于“心灵上的‘断舍离’”
+</p>
         </a>
       
     </div>
@@ -1291,6 +1289,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1427,89 +1438,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1861,8 +1789,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);

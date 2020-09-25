@@ -18,7 +18,7 @@
   
   <title>Volantis 主题优化 - 小酒微醺</title>
   
-    <meta name="keywords" content="主题优化,Hexo">
+    <meta name="keywords" content="Hexo,主题优化">
   
 
   
@@ -722,9 +722,17 @@
     <div class="prev-next">
       
       
-        <a class='next' href='/2020/09/21/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/'>
-          <p class='title'>常见AE表达式<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>AE 表达式：AE 内部基于 JS 编程语言开发的编辑工具，可以理解为简单的编程，却远没其那么复杂。表达式大部分情况下可以更节省时间也更方便，很好的提高工作效率，但具体使用情况还需根据实际情况而...</p>
+        <a class='next' href='/2020/09/24/Hexo%E5%A1%AB%E5%9D%91/'>
+          <p class='title'>Hexo搭建填坑<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+主要记录本人在Hexo博客搭建前，搭建期间，主题优化时等遇到的相关 'Bug'以及解决方法
+当然也有暂无法解决的问题，我会列出来，如果有大神刚好看见，还劳烦解惑~
+
+
+尚未解决😭
+
+   ...</p>
         </a>
       
     </div>
@@ -1300,6 +1308,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1436,89 +1457,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1870,8 +1808,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);

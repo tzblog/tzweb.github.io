@@ -16,13 +16,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>fontawesome 图标使用教程 - 小酒微醺</title>
+  <title>Hexo搭建填坑 - 小酒微醺</title>
   
-    <meta name="keywords" content="Hexo,icon,fontawesome">
+    <meta name="keywords" content="Hexo,主题优化,填坑">
   
 
-  
-    <meta name="description" content="在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法">
   
 
   <!-- feed -->
@@ -510,7 +508,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">fontawesome 图标使用教程</div>
+  <div id="pjax-pageTitle">Hexo搭建填坑</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -550,7 +548,7 @@
     
     
       <h1 class="title">
-        fontawesome 图标使用教程
+        Hexo搭建填坑
       </h1>
       <div class='new-meta-box'>
         
@@ -570,7 +568,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">主题优化</a>
+      <a class="category-link" href="/categories/Hexo/">Hexo</a><span class="sep"></span><a class="category-link" href="/categories/Hexo/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">主题优化</a>
     </a>
   </div>
 
@@ -581,7 +579,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月1日</p>
+    <p>发布于：2020年9月24日</p>
   </a>
 </div>
 
@@ -596,25 +594,71 @@
 
   
   
-  <p>在 hexo 博客中使用 fontawesome 图标有两种方式，一种是<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载安装</a>，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法</p>
-<a id="more"></a>
+  <p style="text-align: center; color: #999;">
+<i>
+主要记录本人在Hexo博客搭建前，搭建期间，主题优化时等遇到的相关 'Bug'以及解决方法<br />
+<span class='p blue'>当然也有暂无法解决的问题，我会列出来，如果有大神刚好看见，还劳烦解惑~</span>
+</i></p>
 
-<div class="tag link"><a class="link-card" title="fontawesome 图标官网" target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">fontawesome 图标官网</p><p class="url">https://fontawesome.dashgame.com/#basic</p></div></a></div>
+<div class="note warning"><p>尚未解决😭</p></div>
+<div class='checkbox red'><input type="checkbox" />
+            <p>任意位置添加彩色滚动变换字体 → <a target="_blank" rel="noopener" href="https://www.itrhx.com/2018/08/27/A04-Hexo-blog-topic-personalization/">实例</a></p>
+            </div>
 
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ol>
-<li><p>点击链接<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载文件</a>在本地<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" class="lazyload" data-srcset="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
-</li>
-<li><p>解压、复制 <code>font-awesome/</code> 目录到您的项目中。</p>
-</li>
-<li><p>打开 <code>font-awesome/less/variables.less</code> 文件或 <code>font-awesome/scss/_variables.scss</code>文件 ，然后修改 <code>@fa-font-path</code> 或 <code>$fa-font-path</code> 为您的字体目录.</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@fa-font-path:</span>   <span class="string">&quot;&quot;</span>../../themes/volantis/source/fonts&quot;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在需要使用<code>icon</code>的地方调用：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-home</span> <span class="string">fa-fw</span></span><br><span class="line"><span class="comment"># 您可以将Font Awesome图标使用在几乎任何地方，只需要使用CSS前缀 fa ，再加上图标名称(home)。</span></span><br></pre></td></tr></table></figure>
+<div class='checkbox red'><input type="checkbox" />
+            <p>更换代码高亮样式 → <a target="_blank" rel="noopener" href="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/dmgl.png">实例</a></p>
+            </div>
 
+<h2 id="开始填坑"><a href="#开始填坑" class="headerlink" title="开始填坑"></a>开始填坑</h2><ul>
+<li><h3 id="未找到部署程序-git"><a href="#未找到部署程序-git" class="headerlink" title="未找到部署程序:git"></a>未找到部署程序:git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Deployer not found: git</span><br></pre></td></tr></table></figure>
+
+<p>解决方法</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 </li>
-</ol>
-<p><span style="color: #999"><strong>注:</strong>  在图标尾部 <code>fa-fw</code>这类为图标样式，更多可参照<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">官网文档</a> </span></p>
+<li><h3 id="配置-Git"><a href="#配置-Git" class="headerlink" title="配置 Git"></a>配置 Git</h3><blockquote>
+<p>初始博客前请优先配置 <code>Git</code>并记录保存名字和邮箱，避免后期发生相关错误</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;email&quot;</span></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>查看用户名和邮箱地址</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><figcaption><span>修改用户名和邮箱地址</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;username&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;youemail&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>输入错误或者忘记账号信息等问题时，可重置本机保留的 git config 信息，命令如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --system --<span class="built_in">unset</span> credential.helper</span><br></pre></td></tr></table></figure>
+</li>
+<li><h3 id="本地-4000-端口被占用"><a href="#本地-4000-端口被占用" class="headerlink" title="本地 4000 端口被占用"></a>本地 4000 端口被占用</h3><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">FATAL</span> <span class="string">Port</span> <span class="number">4000 </span><span class="string">has</span> <span class="string">been</span> <span class="string">used.</span> <span class="string">Try</span> <span class="string">other</span> <span class="string">port</span> <span class="string">instead.</span></span><br></pre></td></tr></table></figure>
+
+<span class='p blue'>解决方法 1（临时更换端口-5000）</span>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">hexo</span> <span class="string">s</span> <span class="string">-p</span> <span class="number">5000</span></span><br></pre></td></tr></table></figure>
+
+<span class='p blue'>解决方法 2（直接更改为 5000 端口）</span>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">server:</span></span><br><span class="line">  <span class="attr">port:</span> <span class="number">5000</span><span class="string">;</span></span><br><span class="line">  <span class="attr">compress:</span> <span class="literal">true</span><span class="string">;</span></span><br><span class="line">  <span class="attr">header:</span> <span class="literal">true</span><span class="string">;</span></span><br></pre></td></tr></table></figure>
+
+<span class='p blue'>解决方法 3（ 杀掉占用进程）</span>
+
+<blockquote>
+<p><code>sudo lsof -i:port</code> (port 为对应的端口号-4000)<br>出现以下内容,</p>
+</blockquote>
+<blockquote>
+<p><code>COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME</code> &gt; <code>Google 451 *** 25u IPv6 0x397967460d72ed6f</code></p>
+</blockquote>
+<blockquote>
+<p><code>sudo kill -9 PID</code> (PID 的值为其下面对应的数字,例:451)</p>
+</blockquote>
+</li>
+<li><h3 id="主题文件加载失败"><a href="#主题文件加载失败" class="headerlink" title="主题文件加载失败"></a>主题文件加载失败</h3><p>当修改博配置文件后，提示错误<code>Theme config load failed+err</code> ,则表示修改的地方格式不正确或者用法错误</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR Theme config load failed.</span><br><span class="line">ERROR &#123;</span><br><span class="line">err: YAMLException: bad indentation of a mapping entry at line 626, column 9:</span><br><span class="line">        icon: fa fa-user-tie</span><br></pre></td></tr></table></figure>
+
+<p>以上错误为：主题文件加载失败，第 626 行 9 列缩进错误。<br><span style="color: #999">可配合翻译软件进行了解问题，英语大神/老司机请忽略</span></p>
+<img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youhua.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youhua.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
+
+<p>解决方法：<br><code>icon: fa fa-user-tie</code> 在 icon：后添加空格即可</p>
+</li>
+</ul>
+<div class="note info"><p>以上是部分 Hexo 博客搭建、优化过程出现的错误，若发现其他报错，会及时持续更新，也欢迎伙伴们留言反馈~</p></div>
 
   
     
@@ -643,10 +687,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-16T15:40:07+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-24T22:24:56+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月16日</p>
+    <p>更新于：2020年9月24日</p>
   </a>
 </div>
 
@@ -662,7 +706,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/24/Hexo%E5%A1%AB%E5%9D%91/&title=Hexo搭建填坑 - 小酒微醺&summary="
           
           >
           
@@ -674,7 +718,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/24/Hexo%E5%A1%AB%E5%9D%91/&title=Hexo搭建填坑 - 小酒微醺&summary="
           
           >
           
@@ -686,7 +730,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/24/Hexo%E5%A1%AB%E5%9D%91/&title=Hexo搭建填坑 - 小酒微醺&summary="
           
           >
           
@@ -721,11 +765,26 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo+coding+gitee博客搭建之旅</p>
-          <p class='content'>作为一个UI设计师（纯前端小白），这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是...</p>
+        <a class='prev' href='/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Volantis 主题优化</p>
+          <p class='content'>
+
+喜欢？那就折腾~
+
+
+建议将主题升级到最新大版本，以免有些效果无法显示或有更便捷方法
+
+增加背景纹理（图片）
+将暗黑模式关闭
+
+theme/_config.yml12345678910dar...</p>
         </a>
       
+      
+        <a class='next' href='/2020/09/22/%E5%B8%B8%E8%A7%81AE%E8%A1%A8%E8%BE%BE%E5%BC%8F/'>
+          <p class='title'>常见AE表达式<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>AE 表达式：AE 内部基于 JS 编程语言开发的编辑工具，可以理解为简单的编程，却远没其那么复杂。表达式大部分情况下可以更节省时间也更方便，很好的提高工作效率，但具体使用情况还需根据实际情况而...</p>
+        </a>
       
     </div>
   
@@ -762,6 +821,77 @@
     
     
 
+<section class="widget blogger shadow desktop mobile">
+  <div class='content'>
+    
+      
+        <a class='avatar flat-box rectangle' href='/about/'>
+          <img no-lazy src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/touxiang-2.png'/>
+        </a>
+      
+    
+    
+      <div class='text'>
+        
+          <h2>小酒微醺</h2>
+        
+        
+          <p>相聚有时，后会无期</p>
+
+        
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="/"
+              class="social fab fa-weixin flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fab fa-qq flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="/"
+              class="social fab fa-weibo flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+          
+            <a href="https://github.com/tzblog/"
+              class="social fab fa-github flat-btn"
+              target="_blank"
+              rel="external nofollow noopener noreferrer">
+              
+            </a>
+          
+        
+      </div>
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
 
 
   <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
@@ -774,7 +904,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-text">方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E5%A1%AB%E5%9D%91"><span class="toc-text">开始填坑</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AA%E6%89%BE%E5%88%B0%E9%83%A8%E7%BD%B2%E7%A8%8B%E5%BA%8F-git"><span class="toc-text">未找到部署程序:git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE-Git"><span class="toc-text">配置 Git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0-4000-%E7%AB%AF%E5%8F%A3%E8%A2%AB%E5%8D%A0%E7%94%A8"><span class="toc-text">本地 4000 端口被占用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%BB%E9%A2%98%E6%96%87%E4%BB%B6%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5"><span class="toc-text">主题文件加载失败</span></a></li></ol></li></ol>
     </div>
   </section>
 
@@ -1229,6 +1359,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1365,89 +1508,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1799,8 +1859,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);

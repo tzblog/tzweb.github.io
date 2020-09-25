@@ -83,6 +83,8 @@
       <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
         <li><a class="s-comment fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
         
+          <li><a class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
       </ul>
     </div>
 		<div class="nav-main">
@@ -513,14 +515,14 @@
 
 <script>
   // 处理封面 此时 jquery 还没加载
-  if ("half" == "none") { // 移除封面
+  if ("none" == "none") { // 移除封面
     document.getElementsByClassName('cover-wrapper')[0].style.display = "none";
     document.getElementsByClassName('l_header', 'cover-wrapper')[0].classList.add("show");
   } else {
-    if ("half" == "half") { // 半屏
+    if ("none" == "half") { // 半屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'half');
       document.getElementsByClassName('scroll-down')[0].style.display = "none";
-    } else if ("half" == "full") { // 全屏
+    } else if ("none" == "full") { // 全屏
       document.getElementsByClassName('cover-wrapper')[0].setAttribute('id', 'full');
       document.getElementsByClassName('scroll-down')[0].style.display = "";
     }
@@ -533,17 +535,13 @@
                                     
                                         
 
-<div class='l_main no_sidebar'>
+<div class='l_main'>
   <article class="article post white-box reveal md shadow article-type-page" id="page" itemscope itemprop="blogPost">
   
 
 
   
   <div class="article-meta" id="top">
-    
-      
-
-
     
     
     
@@ -557,17 +555,32 @@
      background: linear-gradient(to right,#fe5f58,#ffbd2b,#3dc550,#2196f3); color: transparent;
      -webkit-background-clip: text;
      font-size:3rem;
+  h2{
+    margin-bottom:10px;
   }
+
 </style>
 <center>
-  <span class="center-title">诗⛵️远方</span>
+  <span class="center-title">图库</span>
 </center>
-<p style="text-align: center; color: #999;">
-生活不止眼前的苟且,还有诗和远方~</p>
 
-<h2 id="测试相册"><a href="#测试相册" class="headerlink" title="测试相册"></a>测试相册</h2><h2 id="兴义马岭河峡谷"><a href="#兴义马岭河峡谷" class="headerlink" title="兴义马岭河峡谷"></a>兴义马岭河峡谷</h2><div class="gallery ">
-              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe1.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe1.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe2.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe2.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/hq1.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/hq1.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="><br><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe1.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/malinghe1.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<h2 id="马岭河峡谷"><a href="#马岭河峡谷" class="headerlink" title="马岭河峡谷"></a>马岭河峡谷</h2><div class="gallery ">
+              <p><a href="wanfenglin"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="点击查看更多"></a></p>
             </div>
+
+<p style="text-align: right;color: #999;margin-top:-15px">​👣 贵州省黔西南州兴义市马岭河峡谷</p>
+
+<h2 id="兴义万峰林"><a href="#兴义万峰林" class="headerlink" title="兴义万峰林"></a>兴义万峰林</h2><div class="gallery ">
+              <p><a href="wanfenglin"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="点击查看更多"></a></p>
+            </div>
+
+<p style="text-align: right;color: #999;margin-top:-15px">​👣 贵州省黔西南州兴义市万峰林景区</p>
+
+<h2 id="苏州-虎丘-园林"><a href="#苏州-虎丘-园林" class="headerlink" title="苏州 - 虎丘/园林"></a>苏州 - 虎丘/园林</h2><div class="gallery ">
+              <p><a href="wanfenglin"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" alt="点击查看更多"></a></p>
+            </div>
+
+<p style="text-align: right;color: #999;margin-top:-15px">​👣 贵州省黔西南州兴义市万峰林景区</p>
 
   
   
@@ -594,6 +607,78 @@
 </div>
 <aside class='l_side'>
   
+  
+    
+    
+
+<section class="widget text shadow desktop mobile">
+  
+  <header>
+    
+      <i class="fa fa-feather-alt fa-fw" aria-hidden="true"></i><span class='name'>诗⛵️远方</span>
+    
+  </header>
+
+
+  <div class='content'>
+    
+      <p>生活不止眼前的苟且,还有诗和远方~</p>
+
+    
+      <p>照片可能平淡无奇,但是每张照片后面都代表了当时自己所处的环境、经历以及小情绪,对我来说,这些都是很有意义的.</p>
+
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+<section class="widget text shadow desktop mobile">
+  
+  <header>
+    
+      <i class="fa fa-coffee fa-fw" aria-hidden="true"></i><span class='name'>另一种角度的生活</span>
+    
+  </header>
+
+
+  <div class='content'>
+    
+      <p><a href="/photos/life"><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/photos/wanfenglin02.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></a></p>
+
+    
+  </div>
+</section>
+
+  
+
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A9%AC%E5%B2%AD%E6%B2%B3%E5%B3%A1%E8%B0%B7"><span class="toc-text">马岭河峡谷</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B4%E4%B9%89%E4%B8%87%E5%B3%B0%E6%9E%97"><span class="toc-text">兴义万峰林</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8B%8F%E5%B7%9E-%E8%99%8E%E4%B8%98-%E5%9B%AD%E6%9E%97"><span class="toc-text">苏州 - 虎丘&#x2F;园林</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
 
 </aside>
 
@@ -1020,6 +1105,19 @@
 
 
 
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
 
 
 
@@ -1156,89 +1254,6 @@
   });
 </script>
 
-
-
-  
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js" aysc></script>
-
-<script type="text/javascript">
-function getClientHeight(){
-  var clientHeight=0;
-  if(document.body.clientHeight&&document.documentElement.clientHeight){
-  var clientHeight = (document.body.clientHeight<document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }else{
-  var clientHeight = (document.body.clientHeight>document.documentElement.clientHeight)?document.body.clientHeight:document.documentElement.clientHeight;
-  }
-  return clientHeight;
-}
-function supportCss3(style) {
-  var prefix = ['webkit', 'Moz', 'ms', 'o'],
-  i,
-  humpString = [],
-  htmlStyle = document.documentElement.style,
-  _toHumb = function (string) {
-  return string.replace(/-(\w)/g, function ($0, $1) {
-  return $1.toUpperCase();
-  });
-  };
-  for (i in prefix)
-  humpString.push(_toHumb(prefix[i] + '-' + style));
-  humpString.push(_toHumb(style));
-  for (i in humpString)
-  if (humpString[i] in htmlStyle) return true;
-  return false;
-};
-//配置信息
-var options = {
-  bottom: '32px',
-  right: 'unset',
-  left: '16px',
-  time: '0s',
-  mixColor: '#f4f4f4',
-  backgroundColor: '#f4f4f4',
-  buttonColorDark: '#333',
-  buttonColorLight: '#ddd',
-  saveInCookies: true,
-  label: '',
-  autoMatchOsTheme: true
-};
-// 卡片兼容处理 mix-blend-mode 与 effect: [blur] 冲突
-
-function pjax_darkmodejs(){
-  
-  if(!supportCss3('mix-blend-mode'))return;
-  var checkExist2 = setInterval(function() {
-     if (typeof jQuery == 'undefined'){return;}
-     clearInterval(checkExist2);
-     var TopFlag=getClientHeight();
-    $(window).scroll(function(){
-      var top = $(document).scrollTop();
-      if(top > TopFlag) {
-        $(".darkmode-layer").css("mix-blend-mode","normal");
-        $(".darkmode-layer").css("background-color","#222");
-      }else{
-        $(".darkmode-layer").css("mix-blend-mode","difference");
-        $(".darkmode-layer").css("background-color","");
-      }
-    })
-  }, 100);
-  
-}
-// mix-blend-mode support?
-if(supportCss3('mix-blend-mode')){
-  window.darkmode = new Darkmode(options);
-  
-  window.darkmode.showWidget();
-  
-  pjax_darkmodejs();
-}
-////////////////Development///////////////////////
-//////////////darkmode模式切换////////////////////
-//window.darkmode.toggle();                     //
-//////////////darkmode模式判断////////////////////
-//console.log(window.darkmode.isActivated())    //
-//////////////////////////////////////////////////
-</script>
 
 
 
@@ -1590,8 +1605,6 @@ if(supportCss3('mix-blend-mode')){
         
         
         
-        
-          pjax_darkmodejs();
         
       } catch (e) {
         console.log(e);
