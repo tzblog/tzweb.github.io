@@ -75,6 +75,8 @@
           
           <category> UI </category>
           
+          <category> 动效 </category>
+          
       </categories>
       
       
@@ -216,6 +218,8 @@
       
       <categories>
           
+          <category> UI </category>
+          
           <category> 主题优化 </category>
           
       </categories>
@@ -224,6 +228,8 @@
         <tags>
             
             <tag> Hexo </tag>
+            
+            <tag> 主题优化 </tag>
             
             <tag> icon </tag>
             
