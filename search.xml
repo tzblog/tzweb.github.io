@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>AE 插件</title>
+      <link href="/2020/09/28/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/"/>
+      <url>/2020/09/28/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><ol><li>下载丶安装并运行 Adobe 的插件安装程序<a href="https://aescripts.com/learn/zxp-installer/">ZXP Installer</a></li><li>打开安装器 &gt; 左侧选择需要安装插件的程序 &gt; 将插件拖入窗口 &gt; 根据提示安装</li><li>重启 AE,在<code>窗口 &gt; 扩展</code> 选项里即可看到相应的插件</li></ol><h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>1.</p><h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="SVGAConverter"><a href="#SVGAConverter" class="headerlink" title="SVGAConverter"></a>SVGAConverter</h3><p>SVGA 是一种同时兼容 iOS / Android / Flutter / Web 多个平台的开源动画格式。动画文件体积更小，播放资源占用更优，动画还原效果更好。<br>官网:</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> UI </category>
+          
+          <category> AE </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> UI </tag>
+            
+            <tag> AE </tag>
+            
+            <tag> AE插件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Volantis 主题优化</title>
       <link href="/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/"/>
       <url>/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/</url>
@@ -22,9 +53,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 主题优化 </tag>
+            
+            <tag> Hexo </tag>
             
         </tags>
       
@@ -51,9 +82,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 主题优化 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> 填坑 </tag>
             
@@ -84,9 +115,9 @@
             
             <tag> UI </tag>
             
-            <tag> 动效 </tag>
-            
             <tag> AE </tag>
+            
+            <tag> 动效 </tag>
             
         </tags>
       
@@ -227,9 +258,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> 主题优化 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> icon </tag>
             
