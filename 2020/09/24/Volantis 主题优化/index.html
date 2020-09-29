@@ -76,8 +76,8 @@
 </head>
 
 
-    <body>
-        <header class="l_header auto shadow blur" style='opacity: 0' >
+<body>
+    <header class="l_header auto shadow blur" style='opacity: 0' >
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
@@ -434,8 +434,8 @@
   </div>
 </header>
 
-            <div class="l_body">
-                <div class="l_cover">
+    <div class="l_body">
+        <div class="l_cover">
 
   
   
@@ -498,10 +498,10 @@
 
 </div>
 
-                    <div class='safearea'>
-                        <div class='body-wrapper' id="pjax-container">
-                            
-                                <!--此文件用来存放一些不方便取值的变量-->
+        <div class='safearea'>
+            <div class='body-wrapper' id="pjax-container">
+                
+                <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
@@ -534,8 +534,8 @@
 </script>
 
 
-                                    
-                                        
+                
+                
 
 <div class='l_main'>
   <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
@@ -616,6 +616,23 @@
 <p>取消页面顶部信息（标题、作者、日期等）—— 为了美观,并设置标题样式</p>
 <figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment">#不填写</span></span><br><span class="line"><span class="attr">top_meta:</span> []</span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line">  <span class="string">.center-title</span> &#123;</span><br><span class="line">    <span class="attr">background:</span> <span class="string">linear-gradient</span> <span class="string">(to</span> <span class="string">right</span>, <span class="comment">#fe5f58, #ffbd2b, #3dc550, #2196f3);</span></span><br><span class="line">    <span class="string">/*</span> <span class="string">渐变色彩，可自行更改</span> <span class="string">*/</span></span><br><span class="line">    <span class="attr">color:</span> <span class="string">transparent;</span></span><br><span class="line">    <span class="string">-webkit-background-clip:</span> <span class="string">text;</span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">3rem;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br><span class="line"><span class="string">&lt;center&gt;</span></span><br><span class="line">  <span class="string">&lt;span</span> <span class="string">class=&quot;center-title&quot;&gt;My</span> <span class="string">Friends&lt;/span&gt;</span></span><br><span class="line"><span class="string">&lt;/center&gt;</span></span><br></pre></td></tr></table></figure>
 
+<h2 id="页面特效"><a href="#页面特效" class="headerlink" title="页面特效"></a>页面特效</h2><p>以下特效整理于网上分享的代码,均在<code>themes/volantis/layout</code>中的<code>layout.ejs</code>文件<code>body</code>标签内直接引用。</p>
+<h4 id="全屏幕樱花飘落"><a href="#全屏幕樱花飘落" class="headerlink" title="全屏幕樱花飘落"></a>全屏幕樱花飘落</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/yinghua.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/yinghua.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/sakura.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标拖尾特效"><a href="#鼠标拖尾特效" class="headerlink" title="鼠标拖尾特效"></a>鼠标拖尾特效</h4><figure class="highlight html"><figcaption><span>效果参照本网站</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/mouse_slide.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-彩球坠落"><a href="#鼠标点击-彩球坠落" class="headerlink" title="鼠标点击-彩球坠落"></a>鼠标点击-彩球坠落</h4><figure class="highlight html"><figcaption><span>效果参照本网站</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/mouse_click.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-爱心"><a href="#鼠标点击-爱心" class="headerlink" title="鼠标点击-爱心"></a>鼠标点击-爱心</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/clicklove.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-社会主义核心价值观"><a href="#鼠标点击-社会主义核心价值观" class="headerlink" title="鼠标点击-社会主义核心价值观"></a>鼠标点击-社会主义核心价值观</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/clicksocialist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
   
     
     <div class='footer'>
@@ -643,10 +660,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-24T23:14:45+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-29T17:20:06+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月24日</p>
+    <p>更新于：2020年9月29日</p>
   </a>
 </div>
 
@@ -778,7 +795,7 @@
     
     
 
-<section class="widget blogger shadow desktop mobile">
+<section class="widget blogger shadow desktop">
   <div class='content'>
     
       
@@ -833,7 +850,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%83%8C%E6%99%AF%E7%BA%B9%E7%90%86%EF%BC%88%E5%9B%BE%E7%89%87%EF%BC%89"><span class="toc-text">增加背景纹理（图片）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E5%BD%A9%E8%89%B2%E6%A0%87%E9%A2%98"><span class="toc-text">设置页面彩色标题</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%83%8C%E6%99%AF%E7%BA%B9%E7%90%86%EF%BC%88%E5%9B%BE%E7%89%87%EF%BC%89"><span class="toc-text">增加背景纹理（图片）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E5%BD%A9%E8%89%B2%E6%A0%87%E9%A2%98"><span class="toc-text">设置页面彩色标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%89%B9%E6%95%88"><span class="toc-text">页面特效</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%B1%8F%E5%B9%95%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD"><span class="toc-text">全屏幕樱花飘落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%8B%96%E5%B0%BE%E7%89%B9%E6%95%88"><span class="toc-text">鼠标拖尾特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E5%BD%A9%E7%90%83%E5%9D%A0%E8%90%BD"><span class="toc-text">鼠标点击-彩球坠落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E7%88%B1%E5%BF%83"><span class="toc-text">鼠标点击-爱心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%E8%A7%82"><span class="toc-text">鼠标点击-社会主义核心价值观</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -867,8 +884,8 @@
 
 
 
-                        </div>
-                        
+            </div>
+            
   
   <footer class="footer clearfix">
     <br><br>
@@ -909,12 +926,12 @@
   </footer>
 
 
-                            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-                    </div>
-            </div>
-            <div>
-                
-                    
+            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+        </div>
+    </div>
+    <div>
+        
+        
   
 
   <div id="rightmenu-wrapper">
@@ -1145,8 +1162,8 @@
   </script>
 
 
-                        
-                            <!-- required -->
+        
+        <!-- required -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 
@@ -1643,8 +1660,8 @@
 <!-- more -->
 
 
-                                
-                                    
+        
+        
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1761,12 +1778,11 @@
     });
 </script>
 
-                                        
-            </div>
-            <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
-            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-            <script type="text/javascript" src="/js/fireworks.js"></script>
-            <script src="/js/cursor.js"></script>
-    </body>
+        
+    </div>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    <script src="/js/cursor.js"></script>
 
 </html>

@@ -76,8 +76,8 @@
 </head>
 
 
-    <body>
-        <header class="l_header auto shadow blur" style='opacity: 0' >
+<body>
+    <header class="l_header auto shadow blur" style='opacity: 0' >
   <div class='container'>
   <div class='wrapper'>
     <div class='nav-sub'>
@@ -434,8 +434,8 @@
   </div>
 </header>
 
-            <div class="l_body">
-                <div class="l_cover">
+    <div class="l_body">
+        <div class="l_cover">
 
   
   
@@ -498,10 +498,10 @@
 
 </div>
 
-                    <div class='safearea'>
-                        <div class='body-wrapper' id="pjax-container">
-                            
-                                <!--此文件用来存放一些不方便取值的变量-->
+        <div class='safearea'>
+            <div class='body-wrapper' id="pjax-container">
+                
+                <!--此文件用来存放一些不方便取值的变量-->
 <!--思路大概是将值藏到重加载的区域内-->
 
 
@@ -534,8 +534,8 @@
 </script>
 
 
-                                    
-                                        
+                
+                
 
 <div class='l_main'>
   <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
@@ -643,7 +643,7 @@
 <p><code>sudo lsof -i:port</code> (port 为对应的端口号-4000)<br>出现以下内容,</p>
 </blockquote>
 <blockquote>
-<p><code>COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME</code> &gt; <code>Google 451 *** 25u IPv6 0x397967460d72ed6f</code></p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND PID USER FD TYPE DEVICE SIZE/OFF NODE NAME</span><br><span class="line"> Google 451 *** 25u IPv6 0x397967460d72ed6f</span><br></pre></td></tr></table></figure>
 </blockquote>
 <blockquote>
 <p><code>sudo kill -9 PID</code> (PID 的值为其下面对应的数字,例:451)</p>
@@ -652,7 +652,7 @@
 <li><h3 id="主题文件加载失败"><a href="#主题文件加载失败" class="headerlink" title="主题文件加载失败"></a>主题文件加载失败</h3><p>当修改博配置文件后，提示错误<code>Theme config load failed+err</code> ,则表示修改的地方格式不正确或者用法错误</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ERROR Theme config load failed.</span><br><span class="line">ERROR &#123;</span><br><span class="line">err: YAMLException: bad indentation of a mapping entry at line 626, column 9:</span><br><span class="line">        icon: fa fa-user-tie</span><br></pre></td></tr></table></figure>
 
-<p>以上错误为：主题文件加载失败，第 626 行 9 列缩进错误。<br><span style="color: #999">可配合翻译软件进行了解问题，英语大神/老司机请忽略</span></p>
+<p>以上错误为：主题文件加载失败，第 626 行 9 列缩进错误。 <span style="color: #999">可配合翻译软件进行了解问题，英语大神/老司机请忽略</span></p>
 <img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youhua.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/youhua.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=">
 
 <p>解决方法：<br><code>icon: fa fa-user-tie</code> 在 icon：后添加空格即可</p>
@@ -687,10 +687,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-24T22:24:56+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-29T16:29:28+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月24日</p>
+    <p>更新于：2020年9月29日</p>
   </a>
 </div>
 
@@ -821,7 +821,7 @@ theme/_config.yml12345678910dar...</p>
     
     
 
-<section class="widget blogger shadow desktop mobile">
+<section class="widget blogger shadow desktop">
   <div class='content'>
     
       
@@ -910,8 +910,8 @@ theme/_config.yml12345678910dar...</p>
 
 
 
-                        </div>
-                        
+            </div>
+            
   
   <footer class="footer clearfix">
     <br><br>
@@ -952,12 +952,12 @@ theme/_config.yml12345678910dar...</p>
   </footer>
 
 
-                            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
-                    </div>
-            </div>
-            <div>
-                
-                    
+            <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+        </div>
+    </div>
+    <div>
+        
+        
   
 
   <div id="rightmenu-wrapper">
@@ -1188,8 +1188,8 @@ theme/_config.yml12345678910dar...</p>
   </script>
 
 
-                        
-                            <!-- required -->
+        
+        <!-- required -->
 
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
 
@@ -1686,8 +1686,8 @@ theme/_config.yml12345678910dar...</p>
 <!-- more -->
 
 
-                                
-                                    
+        
+        
 
 
 <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
@@ -1804,12 +1804,11 @@ theme/_config.yml12345678910dar...</p>
     });
 </script>
 
-                                        
-            </div>
-            <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
-            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-            <script type="text/javascript" src="/js/fireworks.js"></script>
-            <script src="/js/cursor.js"></script>
-    </body>
+        
+    </div>
+    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
+    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <script type="text/javascript" src="/js/fireworks.js"></script>
+    <script src="/js/cursor.js"></script>
 
 </html>
