@@ -446,7 +446,7 @@
         <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/gudu.png'/>
+    <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/gudu.png' />
     
     
     
@@ -455,43 +455,36 @@
     <div class='menu navigation'>
       <div class='list-h'>
         
+        
+        <a href="/photos/" 
+           target="_blank" 
+          id="photos">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/xiangce.svg'><p>相册</p>
+        </a>
+        
+        <a href="/friends/" 
           
-            <a href="/photos/"
-              
-              
-                target="_blank"
-              
-              id="photos">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/xiangce.svg'><p>相册</p>
-            </a>
+          id="friends">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/youlian.svg'><p>友链</p>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.taozeng.top" 
           
-            <a href="/friends/"
-              
-              
-              id="friends">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/youlian.svg'><p>友链</p>
-            </a>
+          id="https:wwwtaozengtop">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/me.svg'><p>博主</p>
+        </a>
+        
+        <a href="/call/" 
           
-            <a target="_blank" rel="noopener" href="https://www.taozeng.top"
-              
-              
-              id="https:wwwtaozengtop">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/me.svg'><p>博主</p>
-            </a>
-          
-            <a href="/call/"
-              
-              
-              id="call">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/liuyan.svg'><p>留言板</p>
-            </a>
-          
+          id="call">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/liuyan.svg'><p>留言板</p>
+        </a>
+        
         
       </div>
     </div>
   </div>
 </div>
-
         <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
   
@@ -668,40 +661,80 @@
 <section class="widget blogger shadow desktop">
   <div class='content'>
     
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/icon-touxiang.svg'/>
-        </a>
-      
+    
+    <a class='avatar flat-box rectangle' href='/about/'>
+      <img no-lazy src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/icon-touxiang.svg' />
+    </a>
     
     
-      <div class='text'>
-        
-          <h2>小酒微醺</h2>
-        
-        
-          <p>相聚有时，后会无期</p>
+    
 
-        
-        
-      </div>
+    <div class='text'>
+      
+      <h2>小酒微醺</h2>
+      
+      
+      
+    </div>
+    <!-- 封面滚动字体 -->
+    <div id="binft"></div>
+    <script>
+      var binft = function (r) {
+        function t() {
+          return b[Math.floor(Math.random() * b.length)]
+        }
+        function e() {
+          return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+          }
+          return n
+        }
+        function i() {
+          var t = o[c.skillI];
+          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+          o = ["相聚有时,后悔无期", "乾坤未定,你我皆黑马~", "你的孤独,虽败犹荣"].map(function (r) {
+            return r + ""
+          }),
+          a = 2,
+          g = 1,
+          s = 5,
+          d = 75,
+          b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+          c = {
+            text: "",
+            prefixP: -s,
+            skillI: 0,
+            skillP: 0,
+            direction: "forward",
+            delay: a,
+            step: g
+          };
+        i()
+      };
+      binft(document.getElementById('binft'));
+    </script>
     
     
-      <div class="social-wrapper">
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      </div>
+    <div class="social-wrapper">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
     
   </div>
 </section>
-
   
 
   
@@ -712,7 +745,7 @@
   
   <header>
     
-      <a href='/心情语录'><i class="fa fa-feather-alt fa-fw" aria-hidden="true"></i><span class='name'>阴晴圆缺</span></a>
+      <a href='/'><i class="fa fa-satellite-dish fa-fw" aria-hidden="true"></i><span class='name'>最新公告</span></a>
     
   </header>
 
@@ -1726,7 +1759,9 @@
     </div>
     <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
     <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <!-- 烟花坠落 -->
     <script type="text/javascript" src="/js/fireworks.js"></script>
+    <!-- 鼠标拖尾 -->
     <script src="/js/cursor.js"></script>
 
 </html>

@@ -448,7 +448,7 @@
         <div class='cover-body'>
   <div class='top'>
     
-      <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/gudu.png'/>
+    <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/images/gudu.png' />
     
     
     
@@ -457,43 +457,36 @@
     <div class='menu navigation'>
       <div class='list-h'>
         
+        
+        <a href="/photos/" 
+           target="_blank" 
+          id="photos">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/xiangce.svg'><p>相册</p>
+        </a>
+        
+        <a href="/friends/" 
           
-            <a href="/photos/"
-              
-              
-                target="_blank"
-              
-              id="photos">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/xiangce.svg'><p>相册</p>
-            </a>
+          id="friends">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/youlian.svg'><p>友链</p>
+        </a>
+        
+        <a target="_blank" rel="noopener" href="https://www.taozeng.top" 
           
-            <a href="/friends/"
-              
-              
-              id="friends">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/youlian.svg'><p>友链</p>
-            </a>
+          id="https:wwwtaozengtop">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/me.svg'><p>博主</p>
+        </a>
+        
+        <a href="/call/" 
           
-            <a target="_blank" rel="noopener" href="https://www.taozeng.top"
-              
-              
-              id="https:wwwtaozengtop">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/me.svg'><p>博主</p>
-            </a>
-          
-            <a href="/call/"
-              
-              
-              id="call">
-              <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/liuyan.svg'><p>留言板</p>
-            </a>
-          
+          id="call">
+          <img src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/liuyan.svg'><p>留言板</p>
+        </a>
+        
         
       </div>
     </div>
   </div>
 </div>
-
         <div class="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
   
@@ -612,9 +605,12 @@
 <li><p>在需要使用<code>icon</code>的地方调用：</p>
 <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-home</span> <span class="string">fa-fw</span></span><br><span class="line"><span class="comment"># 您可以将Font Awesome图标使用在几乎任何地方，只需要使用CSS前缀 fa ，再加上图标名称(home)。</span></span><br></pre></td></tr></table></figure>
 
+<p>或者</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 单个使用 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-camera-retro fa-lg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 用于列表 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;fa-ul&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>List icons<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>can be used<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-spinner fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>as bullets<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>in lists<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><span style="color: #999"><strong>注:</strong>  在图标尾部 <code>fa-fw</code>这类为图标样式，更多使用方法可参照<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">官网文档</a> </span></p>
 </li>
 </ol>
-<p><span style="color: #999"><strong>注:</strong>  在图标尾部 <code>fa-fw</code>这类为图标样式，更多可参照<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">官网文档</a> </span></p>
 
   
     
@@ -643,10 +639,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-28T09:01:19+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-29T17:47:11+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月28日</p>
+    <p>更新于：2020年9月29日</p>
   </a>
 </div>
 
@@ -1706,7 +1702,9 @@
     </div>
     <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;"></canvas>
     <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
+    <!-- 烟花坠落 -->
     <script type="text/javascript" src="/js/fireworks.js"></script>
+    <!-- 鼠标拖尾 -->
     <script src="/js/cursor.js"></script>
 
 </html>
