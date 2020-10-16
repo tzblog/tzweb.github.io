@@ -16,13 +16,11 @@
 
   <!-- 页面元数据 -->
   
-  <title>fontawesome 图标使用教程 - 小酒微醺</title>
+  <title>AE 插件 - 小酒微醺</title>
   
-    <meta name="keywords" content="Hexo,主题优化,icon,fontawesome">
+    <meta name="keywords" content="UI,AE,AE插件">
   
 
-  
-    <meta name="description" content="在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法">
   
 
   <!-- feed -->
@@ -503,7 +501,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">fontawesome 图标使用教程</div>
+  <div id="pjax-pageTitle">AE 插件</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -543,7 +541,7 @@
     
     
       <h1 class="title">
-        fontawesome 图标使用教程
+        AE 插件
       </h1>
       <div class='new-meta-box'>
         
@@ -563,7 +561,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/UI/">UI</a><span class="sep"></span><a class="category-link" href="/categories/UI/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">主题优化</a>
+      <a class="category-link" href="/categories/UI/">UI</a><span class="sep"></span><a class="category-link" href="/categories/UI/AE/">AE</a>
     </a>
   </div>
 
@@ -574,7 +572,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月1日</p>
+    <p>发布于：2020年9月28日</p>
   </a>
 </div>
 
@@ -589,28 +587,13 @@
 
   
   
-  <p>在 hexo 博客中使用 fontawesome 图标有两种方式，一种是<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载安装</a>，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法</p>
-<a id="more"></a>
-
-<div class="tag link"><a class="link-card" title="fontawesome 图标官网" target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic"><div class="left"><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/256/safari.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="/></div><div class="right"><p class="text">fontawesome 图标官网</p><p class="url">https://fontawesome.dashgame.com/#basic</p></div></a></div>
-
-<h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ol>
-<li><p>点击链接<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">下载文件</a>在本地<img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" class="lazyload" data-srcset="https://tva1.sinaimg.cn/large/007S8ZIlgy1ghpaqaaruaj31yk0mk7n5.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
-</li>
-<li><p>解压、复制 <code>font-awesome/</code> 目录到您的项目中。</p>
-</li>
-<li><p>打开 <code>font-awesome/less/variables.less</code> 文件或 <code>font-awesome/scss/_variables.scss</code>文件 ，然后修改 <code>@fa-font-path</code> 或 <code>$fa-font-path</code> 为您的字体目录.</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">@fa-font-path:</span>   <span class="string">&quot;&quot;</span>../../themes/volantis/source/fonts&quot;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在需要使用<code>icon</code>的地方调用：</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">icon:</span> <span class="string">fa</span> <span class="string">fa-home</span> <span class="string">fa-fw</span></span><br><span class="line"><span class="comment"># 您可以将Font Awesome图标使用在几乎任何地方，只需要使用CSS前缀 fa ，再加上图标名称(home)。</span></span><br></pre></td></tr></table></figure>
-
-<p>或者</p>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 单个使用 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa fa-camera-retro fa-lg&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&lt;!-- 用于列表 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">ul</span> <span class="attr">class</span>=<span class="string">&quot;fa-ul&quot;</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>List icons<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-check-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>can be used<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-spinner fa-spin&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>as bullets<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">li</span>&gt;</span><span class="tag">&lt;<span class="name">i</span> <span class="attr">class</span>=<span class="string">&quot;fa-li fa fa-square&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">i</span>&gt;</span>in lists<span class="tag">&lt;/<span class="name">li</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">ul</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><span style="color: #999"><strong>注:</strong>  在图标尾部 <code>fa-fw</code>这类为图标样式，更多使用方法可参照<a target="_blank" rel="noopener" href="https://fontawesome.dashgame.com/#basic">官网文档</a> </span></p>
-</li>
+  <h2 id="安装方法"><a href="#安装方法" class="headerlink" title="安装方法"></a>安装方法</h2><h3 id="Mac"><a href="#Mac" class="headerlink" title="Mac"></a>Mac</h3><ol>
+<li>下载丶安装并运行 Adobe 的插件安装程序<a target="_blank" rel="noopener" href="https://aescripts.com/learn/zxp-installer/">ZXP Installer</a></li>
+<li>打开安装器 &gt; 左侧选择需要安装插件的程序 &gt; 将插件拖入窗口 &gt; 根据提示安装</li>
+<li>重启 AE,在<code>窗口 &gt; 扩展</code> 选项里即可看到相应的插件</li>
 </ol>
+<h3 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h3><p>1.</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="SVGAConverter"><a href="#SVGAConverter" class="headerlink" title="SVGAConverter"></a>SVGAConverter</h3><p>SVGA 是一种同时兼容 iOS / Android / Flutter / Web 多个平台的开源动画格式。动画文件体积更小，播放资源占用更优，动画还原效果更好。<br>官网:</p>
 
   
     
@@ -639,10 +622,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-29T17:47:11+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-30T15:39:13+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月29日</p>
+    <p>更新于：2020年9月30日</p>
   </a>
 </div>
 
@@ -658,7 +641,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/28/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/&title=AE 插件 - 小酒微醺&summary="
           
           >
           
@@ -670,7 +653,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/28/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/&title=AE 插件 - 小酒微醺&summary="
           
           >
           
@@ -682,7 +665,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/01/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/&title=fontawesome 图标使用教程 - 小酒微醺&summary=在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法"
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/28/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/&title=AE 插件 - 小酒微醺&summary="
           
           >
           
@@ -717,11 +700,33 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/01/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>Hexo+coding+gitee博客搭建之旅</p>
-          <p class='content'>作为一个UI设计师（纯前端小白），这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是...</p>
+        <a class='prev' href='/2020/10/03/book/%E6%96%AD-%E8%88%8D-%E7%A6%BB/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>《断舍离》- 山下英子</p>
+          <p class='content'>
+无能为力的事-  当断。命中无缘的人-  当舍。心头烦欲执念-  当离。
+
+
+
+物质上的“丢弃无用之物”仅仅只是“断舍离”的敲门钻，其真正意义在于“心灵上的‘断舍离’”
+</p>
         </a>
       
+      
+        <a class='next' href='/2020/09/24/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/'>
+          <p class='title'>Volantis 主题优化<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+
+喜欢？那就折腾~
+
+
+建议将主题升级到最新大版本，以免有些效果无法显示或有更便捷方法
+
+ 插件点击插件名称可直接进入相关插件官网
+
+
+ hexo-blog-encrypt（文章加密） 
+  ...</p>
+        </a>
       
     </div>
   
@@ -758,6 +763,89 @@
     
     
 
+<section class="widget blogger shadow desktop">
+  <div class='content'>
+    
+    
+    <a class='avatar flat-box rectangle' href='/about/'>
+      <img no-lazy src='https://cdn.jsdelivr.net/gh/tzblog/cloud@master/icon/icon-touxiang.svg' />
+    </a>
+    
+    
+    
+
+    <div class='text'>
+      
+      <h2>小酒微醺</h2>
+      
+      
+      
+    </div>
+    <!-- 封面滚动字体 -->
+    <div id="binft"></div>
+    <script>
+      var binft = function (r) {
+        function t() {
+          return b[Math.floor(Math.random() * b.length)]
+        }
+        function e() {
+          return String.fromCharCode(94 * Math.random() + 33)
+        }
+        function n(r) {
+          for (var n = document.createDocumentFragment(), i = 0; r > i; i++) {
+            var l = document.createElement("span");
+            l.textContent = e(), l.style.color = t(), n.appendChild(l)
+          }
+          return n
+        }
+        function i() {
+          var t = o[c.skillI];
+          c.step ? c.step-- : (c.step = g, c.prefixP < l.length ? (c.prefixP >= 0 && (c.text += l[c.prefixP]), c.prefixP++) : "forward" === c.direction ? c.skillP < t.length ? (c.text += t[c.skillP], c.skillP++) : c.delay ? c.delay-- : (c.direction = "backward", c.delay = a) : c.skillP > 0 ? (c.text = c.text.slice(0, -1), c.skillP--) : (c.skillI = (c.skillI + 1) % o.length, c.direction = "forward")), r.textContent = c.text, r.appendChild(n(c.prefixP < l.length ? Math.min(s, s + c.prefixP) : Math.min(s, t.length - c.skillP))), setTimeout(i, d)
+        }
+        var l = "",
+          o = ["相聚有时,后悔无期", "乾坤未定,你我皆黑马~", "你的孤独,虽败犹荣"].map(function (r) {
+            return r + ""
+          }),
+          a = 2,
+          g = 1,
+          s = 5,
+          d = 75,
+          b = ["rgb(110,64,170)", "rgb(150,61,179)", "rgb(191,60,175)", "rgb(228,65,157)", "rgb(254,75,131)", "rgb(255,94,99)", "rgb(255,120,71)", "rgb(251,150,51)", "rgb(226,183,47)", "rgb(198,214,60)", "rgb(175,240,91)", "rgb(127,246,88)", "rgb(82,246,103)", "rgb(48,239,130)", "rgb(29,223,163)", "rgb(26,199,194)", "rgb(35,171,216)", "rgb(54,140,225)", "rgb(76,110,219)", "rgb(96,84,200)"],
+          c = {
+            text: "",
+            prefixP: -s,
+            skillI: 0,
+            skillP: 0,
+            direction: "forward",
+            delay: a,
+            step: g
+          };
+        i()
+      };
+      binft(document.getElementById('binft'));
+    </script>
+    
+    
+    <div class="social-wrapper">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    </div>
+    
+  </div>
+</section>
+  
+
+  
+    
+    
+
 
 
   <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
@@ -770,7 +858,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E6%B3%95"><span class="toc-text">方法</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95"><span class="toc-text">安装方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Mac"><span class="toc-text">Mac</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Windows"><span class="toc-text">Windows</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-text">插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SVGAConverter"><span class="toc-text">SVGAConverter</span></a></li></ol></li></ol>
     </div>
   </section>
 
