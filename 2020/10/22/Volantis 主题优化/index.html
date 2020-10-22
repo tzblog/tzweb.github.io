@@ -16,9 +16,9 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hexo+coding+gitee博客搭建之旅 - 小酒微醺</title>
+  <title>Volantis 主题优化 - 小酒微醺</title>
   
-    <meta name="keywords" content="Hexo,博客,Volantis,Coding">
+    <meta name="keywords" content="主题优化,Hexo">
   
 
   
@@ -501,7 +501,7 @@
 
 <div id="pjax-data" style="display: none">
   <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">Hexo+coding+gitee博客搭建之旅</div>
+  <div id="pjax-pageTitle">Volantis 主题优化</div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -538,14 +538,10 @@
   
   <div class="article-meta" id="top">
     
-      
-
-
-    
     
     
       <h1 class="title">
-        Hexo+coding+gitee博客搭建之旅
+        Volantis 主题优化
       </h1>
       <div class='new-meta-box'>
         
@@ -565,7 +561,7 @@
   <div class='new-meta-item category'>
     <a class='notlink'>
       <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-      <a class="category-link" href="/categories/Hexo/">Hexo</a>
+      <a class="category-link" href="/categories/Hexo/">Hexo</a><span class="sep"></span><a class="category-link" href="/categories/Hexo/%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/">主题优化</a>
     </a>
   </div>
 
@@ -576,7 +572,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2020年9月4日</p>
+    <p>发布于：2020年10月22日</p>
   </a>
 </div>
 
@@ -591,38 +587,100 @@
 
   
   
-  <p style="color: #999; text-align: center; line-height: 1.6rem; font-size: 13px">作为一个UI设计师<span style="color: #ccc">（纯前端小白）</span>，这次搭建自己的博客并进行了一些主题美化，那感觉真是...酸爽，真是一段痛并快乐着旅程，不过话说回来，当成功搭建、美化一个模块后，那小小的成就感，那多巴胺的分泌是蹭蹭的往上飙，爱上这种感觉了，所以，我决定学习前端，享受代码实现效果的快感--仰天长笑</p>
+  <p style="text-align: center; color: #999;">
+<i>
+喜欢？那就折腾~
+</i></p>
 
-<hr>
-<h2 id="前期准备"><a href="#前期准备" class="headerlink" title="前期准备"></a>前期准备</h2><div class='checkbox green checked'><input type="checkbox" checked="checked"/>
-            <p>安装<a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn/">长期支持版 Nodo.js</a></p>
-            </div>
+<div class="note info"><p>建议将主题升级到最新大版本，以免有些效果无法显示或有更便捷方法</p></div>
 
-<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
-            <p>安装<a target="_blank" rel="noopener" href="https://git-scm.com/">Git</a>版本</p>
-            </div>
+<h2 id="插件"><a href="#插件" class="headerlink" title=" 插件"></a><i class="fa fa-puzzle-piece fa-fw"></i> 插件</h2><p>点击插件名称可直接进入相关插件官网</p>
+<!-- 插件分割 -->
 
-<div class='checkbox green checked'><input type="checkbox" checked="checked"/>
-            <p>创建<a target="_blank" rel="noopener" href="https://coding.net/">Coding</a>仓库</p>
-            </div>
-
-<details green><summary> <p>Coding仓库创建</p> </summary>
+<details green><summary> <p><a target="_blank" rel="noopener" href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md">hexo-blog-encrypt</a>（文章加密）</p> </summary>
               <div class='content'>
-              <p>dsfasdd</p>
+              <p>安装：<code>npm install --save hexo-blog-encrypt</code><br>使用方法：<a target="_blank" rel="noopener" href="https://github.com/MikeCoder/hexo-blog-encrypt/blob/master/ReadMe.zh.md">查阅本插件文档</a></p>
               </div>
             </details>
 
-<h2 id="开始搭建博客"><a href="#开始搭建博客" class="headerlink" title="开始搭建博客"></a>开始搭建博客</h2><h4 id="检验环境搭建情况"><a href="#检验环境搭建情况" class="headerlink" title="检验环境搭建情况"></a>检验环境搭建情况</h4><p><code>打开终端/Win+R cmd 输入两行命令，若出现版本号则成功</code></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<!-- 插件分割 -->
 
-<div class="timeline"><div class="timenode"><div class="meta"><p><p>检验环境搭建情况 <code>打开终端/Win+R cmd 输入两行命令，若出现版本号则成功</code></p>
-</p></div><div class="body"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure></div></div>
-<div class="timenode"><div class="meta"><p><p>对Git进行用户名和密码的配置 <a href="">可参考此教程</a></p>
-</p></div><div class="body"><figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;Your Name&quot;</span><br><span class="line">git config --global user.email &quot;email@example.com&quot;</span><br></pre></td></tr></table></figure><p>查看用户名和用户邮箱</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config user.name</span><br><span class="line">git config user.email</span><br></pre></td></tr></table></figure></div></div>
-<div class="timenode"><div class="meta"><p><p>安装淘宝的cnpm 管理器</p>
-</p></div><div class="body"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;http:&#x2F;&#x2F;registry.npm.taobao.org</span><br></pre></td></tr></table></figure></div></div>
-<div class="timenode"><div class="meta"><p></p></div><div class="body"></div></div>
-<div class="timenode"><div class="meta"><p></p></div><div class="body"></div></div></div>
+<details green><summary> <p><a target="_blank" rel="noopener" href="https://github.com/Colsrch/hexo-offline-popup">hexo-offline-popup </a>（加速、弹窗）</p> </summary>
+              <div class='content'>
+              <p>安装：<code>npm i hexo-offline-popup --save</code><br>运行：<code>hexo clean &amp; hexo g</code> 激活插件<br>在博客根目录中添加配置</p><figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># offline config passed to sw-precache.</span></span><br><span class="line"><span class="attr">service_worker:</span></span><br><span class="line">  <span class="attr">maximumFileSizeToCacheInBytes:</span> <span class="number">5242880</span></span><br><span class="line">  <span class="attr">staticFileGlobs:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">public/**/*.&#123;js,html,css,png,jpg,gif,svg,eot,ttf,woff,woff2&#125;</span></span><br><span class="line">  <span class="attr">stripPrefix:</span> <span class="string">public</span></span><br><span class="line">  <span class="attr">verbose:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果你有 CDN 资源，例：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> <span class="string">https://cdn.some.com/some/path/some-script.js</span></span><br><span class="line"><span class="bullet">-</span> <span class="string">http://cdn.some-else.org/some/path/deeply/some-style.css</span></span><br></pre></td></tr></table></figure><p>将此配置添加到根目录</p><figure class="highlight yaml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">service_worker:</span></span><br><span class="line">  <span class="attr">runtimeCaching:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">urlPattern:</span> <span class="string">/*</span></span><br><span class="line">      <span class="attr">handler:</span> <span class="string">cacheFirst</span></span><br><span class="line">      <span class="attr">options:</span></span><br><span class="line">        <span class="attr">origin:</span> <span class="string">cdn.some.com</span></span><br><span class="line">    <span class="bullet">-</span> <span class="attr">urlPattern:</span> <span class="string">/*</span></span><br><span class="line">      <span class="attr">handler:</span> <span class="string">cacheFirst</span></span><br><span class="line">      <span class="attr">options:</span></span><br><span class="line">        <span class="attr">origin:</span> <span class="string">cdn.some-else.org</span></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+ <!-- 插件分割 -->
+
+<details green><summary> <p><a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">hexo-neat</a>（自动整理、压缩）</p> </summary>
+              <div class='content'>
+              <p>安装：<code>npm install hexo-neat --save</code><br>使用：<a target="_blank" rel="noopener" href="https://github.com/rozbo/hexo-neat">查阅本插件文档</a></p>
+              </div>
+            </details>
+
+<h2 id="增加背景纹理（图片）"><a href="#增加背景纹理（图片）" class="headerlink" title="增加背景纹理（图片）"></a>增加背景纹理（图片）</h2><ol>
+<li>将暗黑模式关闭</li>
+</ol>
+<figure class="highlight yaml"><figcaption><span>theme/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">darkmodejs:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="comment">#true</span></span><br><span class="line">  <span class="attr">js:</span> <span class="string">https://cdn.jsdelivr.net/npm/darkmode-js@1.5/lib/darkmode-js.min.js</span></span><br><span class="line">  <span class="attr">button:</span> <span class="comment"># button 使用默认或自行开发</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">left:</span> <span class="string">&quot;16px&quot;</span></span><br><span class="line">    <span class="attr">bottom:</span> <span class="string">&quot;32px&quot;</span></span><br><span class="line">    <span class="attr">buttonDark:</span> <span class="string">&quot;#333&quot;</span></span><br><span class="line">    <span class="attr">buttonLight:</span> <span class="string">&quot;#ddd&quot;</span></span><br><span class="line">  <span class="attr">compatible:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>设置背景</li>
+</ol>
+<figure class="highlight yaml"><figcaption><span>themes/source/css/style.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">body</span></span><br><span class="line">  <span class="attr">background-image:</span> <span class="string">url(/images/bg-img.png)</span></span><br><span class="line">  <span class="attr">background-color:</span> <span class="string">var(--color-site-bg)</span></span><br><span class="line">  <span class="attr">text-rendering:</span> <span class="string">optimizelegibility</span></span><br><span class="line">  <span class="string">...</span></span><br></pre></td></tr></table></figure>
+
+<p>若要关闭纹理，将第二步<code>background-image</code>注释即可</p>
+<h2 id="设置页面彩色标题"><a href="#设置页面彩色标题" class="headerlink" title="设置页面彩色标题"></a>设置页面彩色标题</h2><p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/caise-title.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/caise-title.png" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+<p>取消页面顶部信息（标题、作者、日期等）—— 为了美观,并设置标题样式</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="comment">#不填写</span></span><br><span class="line"><span class="attr">top_meta:</span> []</span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="string">&lt;style&gt;</span></span><br><span class="line">  <span class="string">.center-title</span> &#123;</span><br><span class="line">    <span class="attr">background:</span> <span class="string">linear-gradient</span> <span class="string">(to</span> <span class="string">right</span>, <span class="comment">#fe5f58, #ffbd2b, #3dc550, #2196f3);</span></span><br><span class="line">    <span class="string">/*</span> <span class="string">渐变色彩，可自行更改</span> <span class="string">*/</span></span><br><span class="line">    <span class="attr">color:</span> <span class="string">transparent;</span></span><br><span class="line">    <span class="string">-webkit-background-clip:</span> <span class="string">text;</span></span><br><span class="line">    <span class="attr">font-size:</span> <span class="string">3rem;</span></span><br><span class="line">  &#125;</span><br><span class="line"><span class="string">&lt;/style&gt;</span></span><br><span class="line"><span class="string">&lt;center&gt;</span></span><br><span class="line">  <span class="string">&lt;span</span> <span class="string">class=&quot;center-title&quot;&gt;My</span> <span class="string">Friends&lt;/span&gt;</span></span><br><span class="line"><span class="string">&lt;/center&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="彩色变化文字"><a href="#彩色变化文字" class="headerlink" title="彩色变化文字"></a>彩色变化文字</h2><p>复制以下代码，放置在你需要放置的位置（<code>可放置在任何位置</code>）</p>
+<details green><summary> <p>效果参考博主信息卡片，文字可随意更改</p> </summary>
+              <div class='content'>
+              <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 封面滚动字体 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;binft&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="javascript">  <span class="keyword">var</span> binft = <span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">t</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> b[<span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * b.length)];</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">e</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> <span class="built_in">String</span>.fromCharCode(<span class="number">94</span> * <span class="built_in">Math</span>.random() + <span class="number">33</span>);</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">for</span> (<span class="keyword">var</span> n = <span class="built_in">document</span>.createDocumentFragment(), i = <span class="number">0</span>; r &gt; i; i++) &#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">var</span> l = <span class="built_in">document</span>.createElement(<span class="string">&quot;span&quot;</span>);</span></span><br><span class="line">        (l.textContent = e()), (l.style.color = t()), n.appendChild(l);</span><br><span class="line">      &#125;</span><br><span class="line"><span class="javascript">      <span class="keyword">return</span> n;</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">      <span class="keyword">var</span> t = o[c.skillI];</span></span><br><span class="line">      c.step</span><br><span class="line">        ? c.step--</span><br><span class="line">        : ((c.step = g),</span><br><span class="line">          c.prefixP &lt; l.length</span><br><span class="line">            ? (c.prefixP &gt;= 0 &amp;&amp; (c.text += l[c.prefixP]), c.prefixP++)</span><br><span class="line"><span class="javascript">            : <span class="string">&quot;forward&quot;</span> === c.direction</span></span><br><span class="line">            ? c.skillP &lt; t.length</span><br><span class="line">              ? ((c.text += t[c.skillP]), c.skillP++)</span><br><span class="line">              : c.delay</span><br><span class="line">              ? c.delay--</span><br><span class="line"><span class="javascript">              : ((c.direction = <span class="string">&quot;backward&quot;</span>), (c.delay = a))</span></span><br><span class="line">            : c.skillP &gt; 0</span><br><span class="line">            ? ((c.text = c.text.slice(0, -1)), c.skillP--)</span><br><span class="line">            : ((c.skillI = (c.skillI + 1) % o.length),</span><br><span class="line"><span class="javascript">              (c.direction = <span class="string">&quot;forward&quot;</span>))),</span></span><br><span class="line">        (r.textContent = c.text),</span><br><span class="line">        r.appendChild(</span><br><span class="line">          n(</span><br><span class="line">            c.prefixP &lt; l.length</span><br><span class="line"><span class="javascript">              ? <span class="built_in">Math</span>.min(s, s + c.prefixP)</span></span><br><span class="line"><span class="javascript">              : <span class="built_in">Math</span>.min(s, t.length - c.skillP)</span></span><br><span class="line">          )</span><br><span class="line">        ),</span><br><span class="line"><span class="javascript">        <span class="built_in">setTimeout</span>(i, d);</span></span><br><span class="line">    &#125;</span><br><span class="line"><span class="javascript">    <span class="keyword">var</span> l = <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">      o = [</span><br><span class="line"><span class="javascript">        <span class="string">&quot;相聚有时,后悔无期&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;乾坤未定,你我皆黑马~&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;你的孤独,虽败犹荣&quot;</span>,</span></span><br><span class="line"><span class="javascript">      ].map(<span class="function"><span class="keyword">function</span> (<span class="params">r</span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">        <span class="keyword">return</span> r + <span class="string">&quot;&quot;</span>;</span></span><br><span class="line">      &#125;),</span><br><span class="line">      a = 2,</span><br><span class="line">      g = 1,</span><br><span class="line">      s = 5,</span><br><span class="line">      d = 75,</span><br><span class="line">      b = [</span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(110,64,170)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(150,61,179)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(191,60,175)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(228,65,157)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(254,75,131)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(255,94,99)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(255,120,71)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(251,150,51)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(226,183,47)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(198,214,60)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(175,240,91)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(127,246,88)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(82,246,103)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(48,239,130)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(29,223,163)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(26,199,194)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(35,171,216)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(54,140,225)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(76,110,219)&quot;</span>,</span></span><br><span class="line"><span class="javascript">        <span class="string">&quot;rgb(96,84,200)&quot;</span>,</span></span><br><span class="line">      ],</span><br><span class="line">      c = &#123;</span><br><span class="line"><span class="javascript">        text: <span class="string">&quot;&quot;</span>,</span></span><br><span class="line">        prefixP: -s,</span><br><span class="line">        skillI: 0,</span><br><span class="line">        skillP: 0,</span><br><span class="line"><span class="javascript">        direction: <span class="string">&quot;forward&quot;</span>,</span></span><br><span class="line">        delay: a,</span><br><span class="line">        step: g,</span><br><span class="line">      &#125;;</span><br><span class="line">    i();</span><br><span class="line">  &#125;;</span><br><span class="line"><span class="javascript">  binft(<span class="built_in">document</span>.getElementById(<span class="string">&quot;binft&quot;</span>));</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+              </div>
+            </details>
+
+<h2 id="页面特效"><a href="#页面特效" class="headerlink" title="页面特效"></a>页面特效</h2><p>以下特效整理于网上分享的代码,均在<code>themes/volantis/layout</code>中的<code>layout.ejs</code>文件<code>body</code>标签内直接引用。</p>
+<h4 id="全屏幕樱花飘落"><a href="#全屏幕樱花飘落" class="headerlink" title="全屏幕樱花飘落"></a>全屏幕樱花飘落</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/yinghua.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/yinghua.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/sakura.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标拖尾特效"><a href="#鼠标拖尾特效" class="headerlink" title="鼠标拖尾特效"></a>鼠标拖尾特效</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/tuowei.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/tuowei.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><figcaption><span>效果参照本网站</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/mouse_slide.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-彩球坠落"><a href="#鼠标点击-彩球坠落" class="headerlink" title="鼠标点击-彩球坠落"></a>鼠标点击-彩球坠落</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/qiuluo.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/qiuluo.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><figcaption><span>效果参照本网站</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/mouse_click.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-爱心"><a href="#鼠标点击-爱心" class="headerlink" title="鼠标点击-爱心"></a>鼠标点击-爱心</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/images/meihua_7.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/zyoushuo/Blog/images/meihua_7.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/clicklove.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="鼠标点击-社会主义核心价值观"><a href="#鼠标点击-社会主义核心价值观" class="headerlink" title="鼠标点击-社会主义核心价值观"></a>鼠标点击-社会主义核心价值观</h4><details green><summary> <p>展示效果</p> </summary>
+              <div class='content'>
+              <p><img src="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/fuqiang.gif" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenzhang/fuqiang.gif" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII="></p>
+              </div>
+            </details>
+
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/gh/tzblog/cloud@master/wenjian/clicksocialist.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
   
     
@@ -651,10 +709,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-09-16T15:59:37+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-10-10T16:20:14+08:00">
   <a class='notlink'>
     <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2020年9月16日</p>
+    <p>更新于：2020年10月10日</p>
   </a>
 </div>
 
@@ -670,7 +728,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://taozeng.top/2020/10/22/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&title=Volantis 主题优化 - 小酒微醺&summary="
           
           >
           
@@ -682,7 +740,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://taozeng.top/2020/10/22/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&title=Volantis 主题优化 - 小酒微醺&summary="
           
           >
           
@@ -694,7 +752,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/09/04/Hexo+Coding%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B9%8B%E6%97%85%20copy%203/&title=Hexo+coding+gitee博客搭建之旅 - 小酒微醺&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://taozeng.top/2020/10/22/Volantis%20%E4%B8%BB%E9%A2%98%E4%BC%98%E5%8C%96/&title=Volantis 主题优化 - 小酒微醺&summary="
           
           >
           
@@ -729,18 +787,24 @@
   
     <div class="prev-next">
       
-        <a class='prev' href='/2020/09/16/%E5%A4%A7%E5%8E%82%E5%8A%A8%E6%95%88%E8%90%BD%E5%9C%B0%E6%96%B9%E5%BC%8F/'>
-          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>大厂动效落地</p>
-          <p class='content'>前言常见的有 Loading 动画、卡牌抽取动画、徽章展示动画等等。动画有简单的、有复杂的、有时间短的、有时间长的、有特效的，导致我们的落地方案呈现多样化。上面所述的动画我们把它归类为直接落地输...</p>
+        <a class='prev' href='/2020/10/22/AE%E6%8F%92%E4%BB%B6%E5%AE%89%E8%A3%85%E6%96%B9%E6%B3%95/'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>AE 插件</p>
+          <p class='content'>安装方法Mac
+下载丶安装并运行 Adobe 的插件安装程序ZXP Installer
+打开安装器 &gt; 左侧选择需要安装插件的程序 &gt; 将插件拖入窗口 &gt; 根据提示安装
+重启 ...</p>
         </a>
       
       
-        <a class='next' href='/2020/09/04/fontawesome%E5%9B%BE%E6%A0%87%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/'>
-          <p class='title'>fontawesome 图标使用教程<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>在 hexo 博客中使用 fontawesome 图标有两种方式，一种是下载安装，另一种则是直接在 HTML 文档标题中引用 CDN 文件。本文介绍第一种方法
+        <a class='next' href='/2020/10/22/book/%E6%96%AD-%E8%88%8D-%E7%A6%BB/'>
+          <p class='title'>《断舍离》- 山下英子<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>
+无能为力的事-  当断。命中无缘的人-  当舍。心头烦欲执念-  当离。
 
 
-fontawesome 图标官...</p>
+
+物质上的“丢弃无用之物”仅仅只是“断舍离”的敲门钻，其真正意义在于“心灵上的‘断舍离’”
+</p>
         </a>
       
     </div>
@@ -873,7 +937,7 @@ fontawesome 图标官...</p>
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E6%9C%9F%E5%87%86%E5%A4%87"><span class="toc-text">前期准备</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2"><span class="toc-text">开始搭建博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%A3%80%E9%AA%8C%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA%E6%83%85%E5%86%B5"><span class="toc-text">检验环境搭建情况</span></a></li></ol></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-text"> 插件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A2%9E%E5%8A%A0%E8%83%8C%E6%99%AF%E7%BA%B9%E7%90%86%EF%BC%88%E5%9B%BE%E7%89%87%EF%BC%89"><span class="toc-text">增加背景纹理（图片）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E5%BD%A9%E8%89%B2%E6%A0%87%E9%A2%98"><span class="toc-text">设置页面彩色标题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BD%A9%E8%89%B2%E5%8F%98%E5%8C%96%E6%96%87%E5%AD%97"><span class="toc-text">彩色变化文字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%A1%B5%E9%9D%A2%E7%89%B9%E6%95%88"><span class="toc-text">页面特效</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%A8%E5%B1%8F%E5%B9%95%E6%A8%B1%E8%8A%B1%E9%A3%98%E8%90%BD"><span class="toc-text">全屏幕樱花飘落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E6%8B%96%E5%B0%BE%E7%89%B9%E6%95%88"><span class="toc-text">鼠标拖尾特效</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E5%BD%A9%E7%90%83%E5%9D%A0%E8%90%BD"><span class="toc-text">鼠标点击-彩球坠落</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E7%88%B1%E5%BF%83"><span class="toc-text">鼠标点击-爱心</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB-%E7%A4%BE%E4%BC%9A%E4%B8%BB%E4%B9%89%E6%A0%B8%E5%BF%83%E4%BB%B7%E5%80%BC%E8%A7%82"><span class="toc-text">鼠标点击-社会主义核心价值观</span></a></li></ol></li></ol></li></ol>
     </div>
   </section>
 
@@ -899,8 +963,6 @@ fontawesome 图标官...</p>
     </div>
   </section>
 
-
-  
 
   
 
